@@ -1,0 +1,19 @@
+{
+    "game": "SkyrimVanilla",
+    "player": "Sunflash",
+    "filler_item_name": "ThalmorEars",
+    "starting_items": [
+        {
+            "item_categories": [
+                "OffensiveSkill"
+            ],
+            "random": 1
+        },
+        {
+            "item_categories": [
+                "DefensiveSkill"
+            ],
+            "random": 1
+        }
+    ]
+}

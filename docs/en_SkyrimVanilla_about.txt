@@ -1,0 +1,27 @@
+
+Welcome to a Skyrim(Vanilla) Archipelago Manual Randomizer, version 0.5
+
+	Being an early alpha, this version is more geared towards general play-testing and feedback-creation of the types of Locations and Items. There are plans to create similar versions down the line that are more narrow for those that may be interested, but this version is intentionally wide-ranging in possible 'things-to-do'. Large parts of the Location and Region logic is already planned to be reworked. There is an associated file that describes in varying detail the logic gates of the randomizer, as it will be some time before a Poptracker-pack can be created. Thank you for your interest!
+
+
+What does randomization do to this game?
+	First and foremost; know that as a Manual Randomizer, you are not restricted from playing the game as normal. There is no mod or extra code that modifies Skyrim, so you will need to use the honor system while you play.
+	
+	Currently the majority of objectives that can be shuffled among the multiworld are the 'permission' to complete certain quests, and what Skills/Item-tiers you are allowed to use.
+
+		
+What is the goal of Skyrim(Vanilla)?
+	The Victory condition for Skyrim(Vanilla) is completing 1 of the Faction questlines (College of Winterhold, Thieves' Guild, or the Companions) and then completing the Main Quest and killing Alduin.
+	
+	There are plans to add shorter goal variants, as well as different flavors of goals, but currently Faction Completion + Alduin is the only goal I am working on.
+	
+	
+What are location checks in Skyrim(Vanilla)?
+	Locations range from the major quest lines, as well as the Daedric and some Fishing quests; to custom secondary objectives(visit 4/8/13 standing stones, slay 2/6/10 dragons, own all 5 Town homes, etc) and the like.
+	
+	
+Which items can be in another player's world?
+
+	Your various Skills, Weapon and Armor Tiers(Steel/Elven/Dwarven/Etc), Spell Tiers (Novice/Adept/etc); and Quest Progression for the 4 major quest lines(College/Guild/Companions/Main Quest) are all Items and must be found before you can complete the associated quest.
+	
+	

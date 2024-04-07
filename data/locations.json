@@ -1,0 +1,510 @@
+[
+	{
+		"name": "Unbound Complete",
+		"region": "Unbound",
+		"category": ["MainQuest"],
+		"requires": [],
+		"place_item_category": ["Skill"]
+	},
+	{
+		"name": "Before the Storm Complete (1)",
+		"region": "BeforetheStorm",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Bleak Falls Barrow Complete (2)",
+		"region": "BleakFallsBarrow",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Dragon Rising Complete (3)",
+		"region": "DragonRising",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Way of the Voice Complete (4)",
+		"region": "WayoftheVoice",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Horn of Jurgen Windcaller Note (5)",
+		"region": "HornofJurgenWindcaller",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Blade in the Dark Complete (6)",
+		"region": "BladeintheDark",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Jurgen Horn Returned (7)",
+		"region": "JurgenHornReturned",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Diplomatic Immunity Complete (8)",
+		"region": "DiplomaticImmunity",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Cornered Rat Complete (9)",
+		"region": "CorneredRat",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Alduins Wall Complete (10)",
+		"region": "AlduinsWall",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Throat of the World Complete (11)",
+		"region": "ThroatoftheWorld",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Elder Knowledge Complete (12)",
+		"region": "ElderKnowledge",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Aludins Bane Complete (13)",
+		"region": "AlduinsBane",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "The Fallen Complete (14)",
+		"region": "TheFallen",
+		"category": ["MainQuest"],
+		"requires": []
+	},
+	{
+		"name": "Alduin Slain (15)",
+		"victory": true,
+		"region": "WorldEatersEyrie",
+		"category": ["MainQuest"]
+	},
+	{
+		"name": "Take Up Arms Complete (1)",
+		"region": "TakeUpArms",
+		"category": ["CompanionsPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Proving Honor Complete (2)",
+		"region": "ProvingHonor",
+		"category": ["CompanionsPrimary"],
+		"requires": []
+	},
+	{
+		"name": "The Silver Hand Complete (3)",
+		"region": "TheSilverHand",
+		"category": ["CompanionsPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Bloods Honor Complete (4)",
+		"region": "BloodsHonor",
+		"category": ["CompanionsPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Purity of Revenge Complete (5)",
+		"region": "PurityofRevenge",
+		"category": ["CompanionsPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Glory of the Dead Complete (6)",
+		"region": "PurityofRevenge",
+		"category": ["CompanionsPrimary"],
+		"requires": [],
+		"place_item": ["FactionComplete"]
+	},
+	{
+		"name": "First Lessons Complete (1)",
+		"region": "FirstLessons",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Under Saarthal Complete (2)",
+		"region": "UnderSaarthal",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Hitting the Books Complete (3)",
+		"region": "HittingtheBooks",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Good Intentions Complete (4)",
+		"region": "GoodIntentions",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Revealing the Unseen Complete (5)",
+		"region": "RevealingtheUnseen",
+		"category": ["CollegePrimary"],
+		"requires": "|Destruction|"
+	},
+	{
+		"name": "Containment Complete (6)",
+		"region": "Containment",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Staff of Magnus Complete (7)",
+		"region": "StaffofMagnus",
+		"category": ["CollegePrimary"],
+		"requires": []
+	},
+	{
+		"name": "Eye of Magnus Complete (8)",
+		"region": "EyeofMagnus",
+		"category": ["CollegePrimary"],
+		"requires": [],
+		"place_item": ["FactionComplete"]
+	},
+	{
+		"name": "Chance Arrangement Complete (1)",
+		"region": "ChanceArrangement",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Taking Care of Business Complete (2)",
+		"region": "TakingCareofBusiness",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Loud and Clear Complete (3)",
+		"region": "LoudandClear",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Dampened Spirits Complete (4)",
+		"region": "DampenedSpirits",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Scoundrels Folly Complete (5)",
+		"region": "ScoundrelsFolly",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Speaking with Silence Complete [6]",
+		"region": "SpeakingwithSilence",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Hard Answers Complete (7)",
+		"region": "HardAnswers",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Pursuit Complete (8)",
+		"region": "Pursuit",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Trinity Restored Complete (9)",
+		"region": "TrinityRestored",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Blindsighted Complete (10)",
+		"region": "Blindsighted",
+		"category": ["ThievesPrimary"],
+		"requires": []
+	},
+	{
+		"name": "Darkness Returns Complete (11)",
+		"region": "DarknessReturns",
+		"category": ["ThievesPrimary"],
+		"requires": [],
+		"place_item": ["FactionComplete"]
+	},
+	{
+		"name": "Black Star Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": "|Speech|"
+	},
+	{
+		"name": "Boethiahs Calling Complete",
+		"region": "DaedraTier3",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Daedras Best Friend Complete",
+		"region": "DaedraTier2",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Discerning the Transmundane Complete",
+		"region": "ElderKnowledge",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Ill Met By Moonlight Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Cursed Tribe Complete",
+		"region": "DaedraTier2",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Pieces of the Past Complete",
+		"region": "DaedraTier3",
+		"category": ["Daedric"],
+		"requires": "|Speech|"
+	},
+	{
+		"name": "Whispering Door Complete",
+		"region": "DaedraTier3",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Break of Dawn Complete",
+		"region": "DaedraTier2",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "House of Horrors Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": "|Speech|"
+	},
+	{
+		"name": "Taste of Death Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": "|Speech|"
+	},
+	{
+		"name": "Only Cure Complete",
+		"region": "DaedraTier2",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Night to Remember Complete",
+		"region": "DaedraTier2",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Mind of Madness Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Waking Nightmare Complete",
+		"region": "Daedra",
+		"category": ["Daedric"],
+		"requires": []
+	},
+	{
+		"name": "Bandit Bounties Complete = 3",
+		"region": "Radiants",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Bandit Bounties Complete = 6",
+		"region": "BleakFallsBarrow",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Forsworn Bounties Complete = 3",
+		"region": "BeforetheStorm",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Forsworn Bounties Complete = 6",
+		"region": "WayoftheVoice",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Dragon Bounties Complete = 3",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Dragon Bounties Complete = 6",
+		"region": "JurgenHornReturned",
+		"category": ["Radiants","Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Slay 6 Wolves & 2 SabreCats & 1 Bear",
+		"region": "Radiants",
+		"category": ["Radiants","Slaying"],
+		"requires": []
+	},
+	{
+		"name": "Slay 3 Hunter's Prey",
+		"region": "ElderKnowledge",
+		"category": ["Radiants","Slaying"],
+		"requires": []
+	},
+	{
+		"name": "Dragons Slain = 2",
+		"region": "DragonRising",
+		"category": ["Slaying"],
+		"requires": []
+	},
+	{
+		"name": "Dragons Slain = 6",
+		"region": "BladeintheDark",
+		"category": ["Slaying"],
+		"requires": []
+	},
+	{
+		"name": "Dragons Slain = 10",
+		"region": "CorneredRat",
+		"category": ["Slaying"],
+		"requires": []
+	},
+	{
+		"name": "Word Wall Read = 1",
+		"region": "Misc",
+		"category": ["Walls"],
+		"requires": []
+	},
+	{
+		"name": "Word Walls Read = 3",
+		"region": "DragonRising",
+		"category": ["Walls"],
+		"requires": []
+	},
+	{
+		"name": "Word Walls Read = 5",
+		"region": "DiplomaticImmunity",
+		"category": ["Walls"],
+		"requires": []
+	},
+	{
+		"name": "Town Home Owned = 1",
+		"region": "WayoftheVoice",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Town Homes Owned = 3",
+		"region": "JurgenHornReturned",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Town Homes Owned = 5",
+		"region": "ThroatoftheWorld",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 4",
+		"region": "Misc",
+		"category": ["Stones"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 8",
+		"region": "BleakFallsBarrow",
+		"category": ["Stones"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 13",
+		"region": "DiplomaticImmunity",
+		"category": ["Stones"],
+		"requires": []
+	},
+	{
+		"name": "Thane Status = 3",
+		"region": "WayoftheVoice",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Land Owned = 1",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Build 3 Wings on 1 Land",
+		"region": "AlduinsWall",
+		"category": ["Housing"],
+		"requires": "|Smithing|"
+	},
+	{
+		"name": "Angler Acquaintances Complete",
+		"region": "Misc",
+		"category": ["Fishing"],
+		"requires": []
+	},
+	{
+		"name": "Catch of the Day Complete",
+		"region": "Misc",
+		"category": ["Fishing"],
+		"requires": []
+	},
+	{
+		"name": "Caught in the Rain Complete",
+		"region": "BleakFallsBarrow",
+		"category": ["Fishing"],
+		"requires": []
+	},
+	{
+		"name": "Frozen Fish Complete",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Fishing"],
+		"requires": []
+	},
+	{
+		"name": "Darkest Depths Complete",
+		"region": "CorneredRat",
+		"category": ["Fishing"],
+		"requires": []
+	}
+]

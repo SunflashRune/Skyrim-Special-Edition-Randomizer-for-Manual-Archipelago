@@ -1,0 +1,163 @@
+[
+	{	"count":15,
+		"name": "MainQuestProgressive",
+		"category": ["MainQuest"],
+		"progression": true
+	},
+	{
+		"count": "3",
+		"name": "FactionComplete",
+		"category": ["FactionsDone"],
+		"progression": true
+	},
+	{
+		"count":6,
+		"name": "CompanionProgressive",
+		"category": ["CompanionFaction"],
+		"progression": true
+	},
+	{
+		"count":8,
+		"name": "CollegeProgressive",
+		"category": ["College"],
+		"progression": true
+	},
+	{
+		"count":11,
+		"name": "GuildProgressive",
+		"category": ["Guild"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Conjuration",
+		"category": ["Skill","OffensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Destruction",
+		"category": ["Skill","OffensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Archery",
+		"category": ["Skill","OffensiveSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "One-Handed",
+		"category": ["Skill","OffensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Two-Handed",
+		"category": ["Skill","OffensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Speech",
+		"category": ["Skill","OffensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Alteration",
+		"category": ["Skill","DefensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Restoration",
+		"category": ["Skill","DefensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Block",
+		"category": ["Skill","DefensiveSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Heavy Armor",
+		"category": ["Skill","DefensiveSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Light Armor",
+		"category": ["Skill","DefensiveSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Sneak",
+		"category": ["Skill","DefensiveSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Enchanting",
+		"category": ["Skill","SupportSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Illusion",
+		"category": ["Skill","SupportSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Smithing",
+		"category": ["Skill","SupportSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Alchemy",
+		"category": ["Skill","SupportSkill"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Lockpicking",
+		"category": ["Skill","SupportSkill"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Pickpocket",
+		"category": ["Skill","SupportSkill"],
+		"progression": true
+	},
+	{
+		"count": "7",
+		"name": "ProgressiveWeaponTier",
+		"category": ["WeaponTier"],
+		"progression": true
+	},
+	{
+		"count": "5",
+		"name": "ProgressiveLightArmorTier",
+		"category": ["ArmorTier"],
+		"useful": true
+	},
+	{
+		"count": "7",
+		"name": "ProgressiveHeavyArmorTier",
+		"category": ["ArmorTier"],
+		"useful": true
+	},
+	{
+		"count": "4",
+		"name": "ProgressiveSpellTier",
+		"category": ["SpellTier"],
+		"progression": true
+	}
+]

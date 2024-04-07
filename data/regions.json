@@ -1,0 +1,207 @@
+{
+	"Unbound": 	{
+		"starting": true,
+		"connects_to": ["Province"],
+		"requires": []
+	},
+	"Province": 	{
+		"connects_to": ["MainQuest","Misc","Companions","College","Guild"],
+		"requires": []
+	},
+	"Misc": 	{
+		"connects_to": ["Radiants"],
+		"requires": []
+	},
+	"MainQuest": 	{
+		"connects_to": ["BeforetheStorm"],
+		"requires": []
+	},
+	"Companions": 	{
+		"connects_to": ["TakeUpArms"],
+		"requires": []
+	},
+	"College": 	{
+		"connects_to": ["FirstLessons"],
+		"requires": []
+	},
+	"Guild": 	{
+		"connects_to": ["ChanceArrangement"],
+		"requires": []
+	},
+	"Daedra": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Radiants": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"BeforetheStorm": 	{
+		"connects_to": ["BleakFallsBarrow"],
+		"requires": "|MainQuestProgressive:1|"
+	},
+	"BleakFallsBarrow": 	{
+		"connects_to": ["DragonRising"],
+		"requires": "|MainQuestProgressive:2|"
+	},
+	"DragonRising": 	{
+		"connects_to": ["WayoftheVoice", "Daedra"],
+		"requires": "|MainQuestProgressive:3| AND |ProgressiveWeaponTier:1|"
+	},
+	"WayoftheVoice": 	{
+		"connects_to": ["HornofJurgenWindcaller"],
+		"requires": "|MainQuestProgressive:4|"
+	},
+	"DaedraTier2": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"HornofJurgenWindcaller": 	{
+		"connects_to": ["BladeintheDark"],
+		"requires": "|MainQuestProgressive:5|"
+	},
+	"BladeintheDark": 	{
+		"connects_to": ["JurgenHornReturned","DaedraTier2"],
+		"requires": "|MainQuestProgressive:6|"
+	},
+	"JurgenHornReturned": 	{
+		"connects_to": ["DiplomaticImmunity"],
+		"requires": "|MainQuestProgressive:7| AND |ProgressiveWeaponTier:2|"
+	},
+	"DiplomaticImmunity": 	{
+		"connects_to": ["CorneredRat"],
+		"requires": "|MainQuestProgressive:8|"
+	},
+	"CorneredRat": 	{
+		"connects_to": ["AlduinsWall"],
+		"requires": "|MainQuestProgressive:9|"
+	},
+	"AlduinsWall": 	{
+		"connects_to": ["ThroatoftheWorld"],
+		"requires": "|MainQuestProgressive:10|"
+	},
+	"ThroatoftheWorld": 	{
+		"connects_to": ["ElderKnowledge"],
+		"requires": "|MainQuestProgressive:11|"
+	},
+	"ElderKnowledge": 	{
+		"connects_to": ["AlduinsBane","DaedraTier3"],
+		"requires": "|MainQuestProgressive:12|"
+	},
+	"DaedraTier3": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"AlduinsBane": 	{
+		"connects_to": ["TheFallen"],
+		"requires": "|MainQuestProgressive:13|"
+	},
+	"TheFallen": 	{
+		"connects_to": ["WorldEatersEyrie"],
+		"requires": "|MainQuestProgressive:14|"
+	},
+	"WorldEatersEyrie": 	{
+		"connects_to": [],
+		"requires": "|MainQuestProgressive:15| AND |@FactionsDone:1|"
+	},
+	"TakeUpArms": 	{
+		"connects_to": ["ProvingHonor"],
+		"requires": "|CompanionProgressive:1| AND (|One-Handed| OR |Two-Handed|)"
+	},
+	"ProvingHonor": 	{
+		"connects_to": ["TheSilverHand"],
+		"requires": "|CompanionProgressive:2|"
+	},
+	"TheSilverHand": 	{
+		"connects_to": ["BloodsHonor"],
+		"requires": "|CompanionProgressive:3|"
+	},
+	"BloodsHonor": 	{
+		"connects_to": ["PurityofRevenge"],
+		"requires": "|CompanionProgressive:4|"
+	},
+	"PurityofRevenge": 	{
+		"connects_to": ["GloryoftheDead"],
+		"requires": "|CompanionProgressive:5|"
+	},
+	"GloryoftheDead": 	{
+		"connects_to": [],
+		"requires": "|CompanionProgressive:6|"
+	},
+	"FirstLessons": 	{
+		"connects_to": ["UnderSaarthal"],
+		"requires": "|CollegeProgressive:1| AND (|Destruction| OR |Conjuration| OR |Illusion| OR |Alteration|) AND |ProgressiveSpellTier:1| AND |Restoration|"
+	},
+	"UnderSaarthal": 	{
+		"connects_to": ["HittingtheBooks"],
+		"requires": "|CollegeProgressive:2|"
+	},
+	"HittingtheBooks": 	{
+		"connects_to": ["GoodIntentions"],
+		"requires": "|CollegeProgressive:3|"
+	},
+	"GoodIntentions": 	{
+		"connects_to": ["RevealingtheUnseen"],
+		"requires": "|CollegeProgressive:4|"
+	},
+	"RevealingtheUnseen": 	{
+		"connects_to": ["Containment"],
+		"requires": "|CollegeProgressive:5| AND |Destruction|"
+	},
+	"Containment": 	{
+		"connects_to": ["StaffofMagnus"],
+		"requires": "|CollegeProgressive:6|"
+	},
+	"StaffofMagnus": 	{
+		"connects_to": ["EyeofMagnus"],
+		"requires": "|CollegeProgressive:7|"
+	},
+	"EyeofMagnus": 	{
+		"connects_to": [],
+		"requires": "|CollegeProgressive:8|"
+	},
+	"ChanceArrangement": 	{
+		"connects_to": ["TakingCareofBusiness"],
+		"requires": "|GuildProgressive:1| AND |Sneak| AND |Pickpocket| AND |Lockpicking|"
+	},
+	"TakingCareofBusiness": 	{
+		"connects_to": ["LoudandClear"],
+		"requires": "|GuildProgressive:2|"
+	},
+	"LoudandClear": 	{
+		"connects_to": ["DampenedSpirits"],
+		"requires": "|GuildProgressive:3|"
+	},
+	"DampenedSpirits": 	{
+		"connects_to": ["ScoundrelsFolly"],
+		"requires": "|GuildProgressive:4|"
+	},
+	"ScoundrelsFolly": 	{
+		"connects_to": ["SpeakingwithSilence"],
+		"requires": "|GuildProgressive:5|"
+	},
+	"SpeakingwithSilence": 	{
+		"connects_to": ["HardAnswers"],
+		"requires": "|GuildProgressive:6|"
+	},
+	"HardAnswers": 	{
+		"connects_to": ["Pursuit"],
+		"requires": "|GuildProgressive:7|"
+	},
+	"Pursuit": 	{
+		"connects_to": ["TrinityRestored"],
+		"requires": "|GuildProgressive:8|"
+	},
+	"TrinityRestored": 	{
+		"connects_to": ["Blindsighted"],
+		"requires": "|GuildProgressive:9|"
+	},
+	"Blindsighted": 	{
+		"connects_to": ["DarknessReturns"],
+		"requires": "|GuildProgressive:10|"
+	},
+	"DarknessReturns": 	{
+		"connects_to": [],
+		"requires": "|GuildProgressive:11|"
+}
+}

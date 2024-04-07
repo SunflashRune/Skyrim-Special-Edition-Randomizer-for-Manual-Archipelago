@@ -1,0 +1,38 @@
+This will briefly list the expected/intended classifications of the various Weapon and Armor Tiers for Skyrim Vanilla.
+This not an exhaustive list of all unique items and the like, but for now the player is expected to use reasonable judgment when attempting
+to decide if their found item should be used yet.
+A more detailed classification it intended to be put together eventually, there are simply other priorities at this point.
+
+They are grouped roughly by damage or defense, not by anything else at this time. And yes, I leaned heavily on UESP.net for a lot of the grouping
+because I know better than to trust my memory.
+
+Weapons
+
+	Tier 1/Starting: Iron
+	Tier 2: Steel, Silver
+	Tier 3: Orcish
+	Tier 4: Dwarven
+	Tier 5: Elven, Nord Hero, Nordic, Skyforge Steel
+	Tier 6: Glass
+	Tier 7: Ebony, Stalhrim
+	Tier 8: Daedric, Dragonbone
+	
+Light Armor
+
+	Tier 1/Starting: Hide, Fur, Studded, Vampire
+	Tier 2: Leather, Forsworn, Thalmor
+	Tier 3: Elven, Dawnguard, Chitin
+	Tier 4: Scaled, Elven Gilded
+	Tier 5: Glass, Stalhrim
+	Tier 6: Dragonscale
+	
+Heavy Armor
+
+	Tier 1/Starting: Iron, Banded Iron, Ancient Nord
+	Tier 2: Steel, Bonemould
+	Tier 3: Dwarven, Dawnguard
+	Tier 4: Steel Plate, Chitin
+	Tier 5: Orcish
+	Tier 6: Ebony, Nordic
+	Tier 7: Dragonplate, Stalhrim
+	Tier 8: Daedric

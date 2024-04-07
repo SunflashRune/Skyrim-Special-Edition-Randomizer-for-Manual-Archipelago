@@ -1,0 +1,160 @@
+
+Skyrim(Vanilla) Archipelago Manual Randomizer Version 0.5
+
+This document will attempt to summarize and then detail the various bits of Logic that is used to lock out certain parts of the game until their Items are acquired.
+
+Summary:
+
+	You begin with access to 1 Offensive-class Skill, 1 of EITHER a Defensive or Support Skill; and Unbound, escaping Helgen. Your two Starting skills are visable at the start of the game, so it is suggested you connect your Manual Client to the Server before you start your game, to possibly pick a race that works well. You will also always acquire 1 Skill(of any kind) after completing Unbound.
+	
+	You will now have access to 6 Daedric quest Locations, all 5 Fishing quest Location, 5 Housing Locations, 4 Bounty Locations, all 3 Standing Stones Locations,  and all 3 Word Wall Locations.
+	
+	Each of the Main Quest Locations, and the Faction Quest Locations, need to be Unlocked before you can complete their various Quests. This unlocking is done by acquiring a certain amount of Progressive quest items.
+	
+	In addition, all Dragon-slaying Locations(General and Bounty) are locked behind three "MainQuestProgressive" Items.
+	
+	Similarly, 5 more Daedric quest Locations also require four "MainQuestProgressive" Items.
+	
+	Finally, the last 3 Daedric quest Locations require twelve "MainQuestProgressive" Items.
+	
+	
+Details:
+	First, I will list each Location and its corresponding logical locking item(if any). Then I will explain in some detail why I settled on each logical lock, for those curious.
+	
+
+Start of the game:
+		"Unbound Complete"(Escape Helgen, currently always awards a random Skill)
+Accessible after Unbound, has no other lock at this time:
+		"Standing Stones Found = 4"(The Guardian Stones count as 3, per in-game counter)
+		"Bandit Bounties Complete = 3"(Acquire a Bandit-Bounty quest from an Innkeeper, kill the target, and turn-in to the Hold's steward. Do this 3 times for this level.)
+		"Word Walls Read = 1"(Acquire 1 Shout word from a Word Wall.)
+		"Angler Acquaintances Complete"
+		"Catch of the Day Complete"
+		"Slay 6 Wolves, 2 Sabre Cats, and 1 Bear" (Player choice if they count the tutorial bear or not, I usually don't.)
+		
+		"Town Home Owned 1"(Own 1 house in a Hold)
+
+
+		"Architect"(Build 3 wings on one house" ---- Require Simithing
+
+
+
+
+Requires 1 "MainQuestProgressive":
+	"Before the Storm Complete"
+		"Forsworn Bounties Complete = 3"(Same as Bandits, but for Forsworn)
+		
+		
+
+		"Caught in the Rain Complete"
+
+Requires 2 "MainQuestProgressive":
+	"Bleak Falls Barrow Complete"
+		"Standing Stones Found = 8"
+		"Bandit Bounties Complete = 6"
+		"Caught in the Rain Complete"
+		
+Requires 3 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
+	"Dragon Rising Complete"
+		"Word Walls Read = 3"
+		"Dragons Slain = 2"(Mirmulinr, from Dragon Rising itself, counts as 1)
+		Daedric Tier 1 Quests
+			"Black Star Complete" (Requires Speech)
+			"Ill Met By Moonlight Complete"
+			"House of Horrors Complete" (Requires Speech)
+			"Taste of Death Complete" (Requires Speech)
+			"Mind of Madness Complete"
+			"Waking Nightmare Complete"
+
+Requires 4 "MainQuestProgressive":
+	"Way of the Voice Complete"
+		"Forsworn Bounties Complete = 6"
+		"Town Home Owned = 1"
+		"Thane in 3 Holds"
+	
+Requires 5 "MainQuestProgressive":
+	"Horn of Jurgen Windcaller Note" (Get note and leave dungeon)
+		"Frozen Fish Complete"
+		"Land Owned = 1"
+		"Dragon Bounties Complete = 3"
+
+Requires 6 "MainQuestProgressive":
+	"Blade in the Dark Complete"
+		"Dragons Slain = 6"
+		Daedric Tier 2 Quests
+			"Daedra's Best Friend Complete"
+			"Cursed Tribe Complete"
+			"Break of Dawn Complete"
+			"Only Cure Complete"
+			"Night to Remember Complete"
+
+Requires 7 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
+	"Jurgen Horn Complete"(Actually turn in the Horn to Arengir after getting it from Delphine)
+		"Town Home Owned = 3"
+		"Dragon Bounties Complete = 6"
+
+Requires 8 "MainQuestProgressive":
+	"Diplomatic Immunity Complete"
+		"Standing Stones Found = 13"(This should be all of them!)
+		"Word Walls Read = 5"
+	
+Requires 9 "MainQuestProgressive":
+	"Cornered Rat Complete"
+		"Darkest Depths Complete"
+		"Dragons Slain = 10"
+
+Requires 10 "MainQuestProgressive":
+	"Aludins Wall Complete"
+		"Build 3 Wings on Land" (Requires Smithing)
+
+Requires 11 "MainQuestProgressive":
+	"Throat of the World Complete"
+		"Town Homes Owned = 5
+
+Requires 12 "MainQuestProgressive":
+	"Elder Knowledge Complete"
+		"Slay 3 Hunter's Prey"(Custom Objective, see Notes below)
+		Daedric Tier 3 Quests
+			"Boethiahs Calling Complete"
+			"Discerning the Transmundane Complete"
+			"Pieces of the Past Complete" (Requires Speech)
+			"Whispering Door Complete"(Of note, simply retrieving the Blade is all that's required)
+
+Requires 13 "MainQuestProgressive":
+	"Alduins bane Complete"
+	
+Requires 14 "MainQuestProgressive":
+	"The Fallen Complete"
+	
+Requires 15 "MainQuestProgressive" AND 1 "Faction Complete"
+	"Alduin Slain" (VICTORY CONDITION, SEED COMPLETE)
+	
+The 3 Factions follow roughly the same pattern as each other:
+Requires CompanionProgressive/CollegeProgressive/GuildProgressive items.
+
+The first College quest (First Lessons) ALSO Requires ONE OF Destruction/Conjuration/Illusion/Restoration or Alteration.
+	Revaling the Unseen (5 College Progressives) will always Require Destruction for that quest to be in Logic.
+The first Companions quest (Take Up Arms) ALSO Requires EITHER one-handed or two-handed skill.
+The first Guild quest (Chance Arrangement) ASLO requires Sneak AND Pickpocket AND Lockpicking.
+ 
+Each following Quest will require at least one "X"Progressive item before you can access the Location.
+
+Of special note:
+
+ANY entry to Whiterun will be 'out of logic' without either A) a MainQuestProgressive that allows you to do the Riverwood conversations and get the 'Riverwood calls for the Jarl's aid' option with the Whiterun gate guard, or B) Speech Skill unlock, allowing you to choose the persuade option. This is mostly important for doing Bandit Bounty quests early on; you won't be able to 'legally' turn in Whiterun Hold Bounties without meeting one of the two options above. There is currently nothing in logic accounting for this, but also shouldn't actually block you from anything at the moment as there is no Whiterun-only stuff.
+
+Riften can be entered by a back door(The Black Briar Meadary near the Fishery), but the front door needs Speech to access via the guard's persuade/bribe option. Bribing still levels up the Speech skill, and is therefore considered a use of the Speech skill.
+
+Hunter's Prey - Slay 3 out of the following list:
+	A Snow Bear
+	A Snow Sabre Cat
+	A Mammoth
+	An Ice Wolf
+	The Frost Giant (Forgotten Vale)
+	Nimhe (Giant Frostbite Spider in Nchuand-Zel Excavation Site)
+	Spriggan Earth-Mother
+	Vale Sabre Cat (Darkfall Cave/Forgotten Vale)
+	Chaurus Hunter
+	Vulthuryol (Blackreach!)
+	Naaslaarum & Voslaarum (Dragon Twins around Forgotten Vale)
+
