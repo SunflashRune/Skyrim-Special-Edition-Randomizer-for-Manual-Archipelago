@@ -23,7 +23,7 @@ So how does this end up working for Skyrim Special Edition?
     Welcome back! Now for our stuff.
     Take the SkyrimSpecialEditionSunflashRune.apworld file you download from the Releases page here on GitHub(somewhere over to the right!), and then copy that into your Archpipelago install's worlds folder. Something like .../Archipelago/lib/worlds/ is where you wanna drop it.
 
-    Next, you'll need a Manual_SkyrimSpecialEdition_SunflashRune.yaml file to tell your Archipelago install that you want a randomized game of Skyrim!
+   Next, you'll need a Manual_SkyrimSpecialEdition_SunflashRune.yaml file to tell your Archipelago install that you want a randomized game of Skyrim!
     The simplest way to acquire one is by going to your .../Archipelago/ install and finding 'ArchipelagoLauncher.exe' and running that program.
     On the left will be "Generate Template Options", which will fill your .../Archipelago/Players/Templates/ folder with some default templates, one of which should be the afore-mentioned yaml file we need.
     You'll want to open that in an editor of your choice (we use Notepad++), and find the "name: Player{number}" line. Replace that with whatever name you want,change any
@@ -31,15 +31,15 @@ So how does this end up working for Skyrim Special Edition?
     Move it or a copy of it up a folder level so it's in .../Archipelago/Players/ along with any other Yamls of other games you have setup and want to randomize together.
     The Archipelago site has setup guides for all the offical supported games here: https://archipelago.gg/tutorial/
 
-    Since you're playing with a Manual AP game, you MUST Generate your randomized game locally, or on your own machine; before you can decide on how to host the game.
+   Since you're playing with a Manual AP game, you MUST Generate your randomized game locally, or on your own machine; before you can decide on how to host the game.
     To do so, once your .../Archipelago/Players/ folder has all the Yamls you want to randomize together, go find in ArchipelagoGenerate.exe (should be in .../Archipelago/ )and run that program.
     If everything goes as it should, you'll have a file (Named AP_stringofnumbershere.zip) delivered to your .../Archipelago/Output/ folder.
 
-    The simplest next step, and the only one we'll describe here; is to take that zip file and upload it on the AP site and let it do the hosting for you.
+   The simplest next step, and the only one we'll describe here; is to take that zip file and upload it on the AP site and let it do the hosting for you.
     https://archipelago.gg/uploads
     This will eventually lead to you getting a room assigned, along with connection info (usually something like archipelago.gg:PortNumbersHere).
 
-    FINALLY time to connect!
+   FINALLY time to connect!
     Go open ArchipelagoLauncher.exe again, and on the right-hand side (you may need to scroll) should be Manual Client.
     At the top, the Server box should read the same as your server host. If you've followed these instructions, it'll be the info you have from the room assigned in the previous step; that archipelago.gg:PortNumberHere line. 
     Manual Game Idea box will need to read Manual_SkyrimSpecialEdition_SunflashRune  EXACTLY, caps and everything.
@@ -47,4 +47,4 @@ So how does this end up working for Skyrim Special Edition?
     That should be it!
 
 
-    If you have issues with this process, a quick visit to the Manual Discord and a search therein for 'Skyrim Special Edition' should get you to the forum post where I keep information up to date and try to help with what trouble-shooting I can. 
+   If you have issues with this process, a quick visit to the Manual Discord and a search therein for 'Skyrim Special Edition' should get you to the forum post where I keep information up to date and try to help with what trouble-shooting I can. 
