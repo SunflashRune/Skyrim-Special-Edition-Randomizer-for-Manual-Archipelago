@@ -5,7 +5,7 @@
 		"requires": []
 	},
 	"Province": 	{
-		"connects_to": ["MainQuest","Misc","Companions","College","Guild"],
+		"connects_to": ["MainQuest","Misc","Companions","College","Guild","Brotherhood"],
 		"requires": []
 	},
 	"Misc": 	{
@@ -26,6 +26,10 @@
 	},
 	"Guild": 	{
 		"connects_to": ["ChanceArrangement"],
+		"requires": []
+	},
+	"Brotherhood":	{
+		"connects_to": ["Innocence Lost"],
 		"requires": []
 	},
 	"Daedra": 	{
@@ -49,11 +53,15 @@
 		"requires": "|MainQuestProgressive:3| AND |ProgressiveWeaponTier:1|"
 	},
 	"WayoftheVoice": 	{
-		"connects_to": ["HornofJurgenWindcaller"],
+		"connects_to": ["HornofJurgenWindcaller","DragonB","DawnG"],
 		"requires": "|MainQuestProgressive:4|"
 	},
-	"DaedraTier2": 	{
-		"connects_to": [],
+	"DragonB": {
+		"connects_to": ["Dragonborn"],
+		"requires": []
+	},
+	"DawnG": {
+		"connects_to": ["Dawnguard"],
 		"requires": []
 	},
 	"HornofJurgenWindcaller": 	{
@@ -63,6 +71,10 @@
 	"BladeintheDark": 	{
 		"connects_to": ["JurgenHornReturned","DaedraTier2"],
 		"requires": "|MainQuestProgressive:6|"
+	},
+	"DaedraTier2": 	{
+		"connects_to": [],
+		"requires": []
 	},
 	"JurgenHornReturned": 	{
 		"connects_to": ["DiplomaticImmunity"],
@@ -102,7 +114,7 @@
 	},
 	"WorldEatersEyrie": 	{
 		"connects_to": [],
-		"requires": "|MainQuestProgressive:15| AND |@FactionsDone:1|"
+		"requires": "|MainQuestProgressive:15|"
 	},
 	"TakeUpArms": 	{
 		"connects_to": ["ProvingHonor"],
@@ -203,5 +215,129 @@
 	"DarknessReturns": 	{
 		"connects_to": [],
 		"requires": "|GuildProgressive:11|"
-}
+	},
+	"Innocence Lost": {
+		"connects_to": ["With Friends Like These..."],
+		"requires": "|BrotherhoodProgressive:1| AND |Sneak| AND |Lockpicking|"
+	},
+	"With Friends Like These...": {
+		"connects_to": ["Sanctuary"],
+		"requires": "|BrotherhoodProgressive:2|"
+	},
+	"Sanctuary": {
+		"connects_to": ["Mourning Never Comes"],
+		"requires": "|BrotherhoodProgressive:3|"
+	},
+	"Mourning Never Comes": {
+		"connects_to": ["Whispers in the Dark"],
+		"requires": "|BrotherhoodProgressive:4|"
+	},
+	"Whispers in the Dark": {
+		"connects_to": ["The Silence Has Been Broken"],
+		"requires": "|BrotherhoodProgressive:5|"
+	},
+	"The Silence Has Been Broken": {
+		"connects_to": ["Bound Until Death"],
+		"requires": "|BrotherhoodProgressive:6|"
+	},
+	"Bound Until Death": {
+		"connects_to": ["Breaching Security"],
+		"requires": "|BrotherhoodProgressive:7|"
+	},
+	"Breaching Security": {
+		"connects_to": ["The Cure For Madness"],
+		"requires": "|BrotherhoodProgressive:8|"
+	},
+	"The Cure For Madness": {
+		"connects_to": ["Recipe for Disaster"],
+		"requires": "|BrotherhoodProgressive:9|"
+	},
+	"Recipe for Disaster": {
+		"connects_to": ["To Kill an Empire"],
+		"requires": "|BrotherhoodProgressive:10|"
+	},
+	"To Kill an Empire": {
+		"connects_to": ["Death Incarnate"],
+		"requires": "|BrotherhoodProgressive:11|"
+	},
+	"Death Incarnate": {
+		"connects_to": ["Hail Sithis"],
+		"requires": "|BrotherhoodProgressive:12|"
+	},
+	"Hail Sithis": {
+		"connects_to": [],
+		"requires": "|BrotherhoodProgressive:13|"
+	},
+	"Dawnguard":	{
+		"connects_to": ["Awakening"],
+		"requires": "|DawnguardProgressive:1|"
+	},
+	"Awakening":	{
+		"connects_to": ["Bloodline"],
+		"requires": "|DawnguardProgressive:2|"
+	},
+	"Bloodline":	{
+		"connects_to": ["A New Order/The Bloodstone Chalice"],
+		"requires": "|DawnguardProgressive:3|"
+	},
+	"A New Order/The Bloodstone Chalice":	{
+		"connects_to": ["Prophet"],
+		"requires": "|DawnguardProgressive:4|"
+	},
+	"Prophet":	{
+		"connects_to": ["Scroll Scouting"],
+		"requires": "|DawnguardProgressive:5|"
+	},
+	"Scroll Scouting":	{
+		"connects_to": ["Chasing Echoes"],
+		"requires": "|DawnguardProgressive:6|"
+	},
+	"Chasing Echoes":	{
+		"connects_to": ["Seeking Disclosure"],
+		"requires": "|DawnguardProgressive:7|"
+	},
+	"Seeking Disclosure":	{
+		"connects_to": ["Unseen Visions"],
+		"requires": "|DawnguardProgressive:8|"
+	},
+	"Unseen Visions":	{
+		"connects_to": ["Touching the Sky"],
+		"requires": "|DawnguardProgressive:9|"
+	},
+	"Touching the Sky":	{
+		"connects_to": ["Kindred Judgment"],
+		"requires": "|DawnguardProgressive:10|"
+	},
+	"Kindred Judgment":	{
+		"connects_to": [],
+		"requires": "|DawnguardProgressive:11|"
+	},
+	"Dragonborn": {
+		"connects_to": ["The Temple of Miraak"],
+		"requires": "|DragonbornProgressive:1|"
+	},
+	"The Temple of Miraak": {
+		"connects_to": ["The Fate of the Skaal"],
+		"requires": "|DragonbornProgressive:2|"
+	},
+	"The Fate of the Skaal": {
+		"connects_to": ["Cleansing the Stones"],
+		"requires": "|DragonbornProgressive:3|"
+	},
+	"Cleansing the Stones": {
+		"connects_to": ["The Path of Knowledge"],
+		"requires": "|DragonbornProgressive:4|"
+	},
+	"The Path of Knowledge": {
+		"connects_to": ["The Gardener of Men"],
+		"requires": "|DragonbornProgressive:5|"
+	},
+	"The Gardener of Men": {
+		"connects_to": ["At the Summit of Apocrypha"],
+		"requires": "|DragonbornProgressive:6|"
+	},
+	"At the Summit of Apocrypha": {
+		"connects_to": [],
+		"requires": "|DragonbornProgressive:7|"
+	}
 }

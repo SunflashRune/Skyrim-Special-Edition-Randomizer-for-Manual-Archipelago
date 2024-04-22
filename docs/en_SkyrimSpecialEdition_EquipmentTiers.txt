@@ -1,14 +1,12 @@
-This will briefly list the expected/intended classifications of the various Weapon and Armor Tiers for Skyrim Vanilla.
-This not an exhaustive list of all unique items and the like, but for now the player is expected to use reasonable judgment when attempting
-to decide if their found item should be used yet.
+This will briefly list the expected/intended classifications of the various Weapon and Armor Tiers for Skyrim Special Edition.
+This not an exhaustive list of all unique items and the like, but for now the player is expected to use reasonable judgment when attempting to decide if their found item should be used yet.
 A more detailed classification it intended to be put together eventually, there are simply other priorities at this point.
 
-They are grouped roughly by damage or defense, not by anything else at this time. And yes, I leaned heavily on UESP.net for a lot of the grouping
-because I know better than to trust my memory.
+They are grouped roughly by damage or defense, not by anything else at this time. And yes, I leaned heavily on UESP.net for a lot of the grouping.
 
 Weapons
 
-	Tier 1/Starting: Iron
+	Tier 1/Starting: Iron, Ancient Nord
 	Tier 2: Steel, Silver
 	Tier 3: Orcish
 	Tier 4: Dwarven

@@ -1,11 +1,16 @@
 [
+	{
+		"count":1,
+		"name": "Goal Complete",
+		"progression":true
+	},
 	{	"count":15,
 		"name": "MainQuestProgressive",
 		"category": ["MainQuest"],
 		"progression": true
 	},
 	{
-		"count": "3",
+		"count":6,
 		"name": "FactionComplete",
 		"category": ["FactionsDone"],
 		"progression": true
@@ -14,6 +19,7 @@
 		"count":6,
 		"name": "CompanionProgressive",
 		"category": ["CompanionFaction"],
+		"comp_enable": "Yes",
 		"progression": true
 	},
 	{
@@ -26,6 +32,24 @@
 		"count":11,
 		"name": "GuildProgressive",
 		"category": ["Guild"],
+		"progression": true
+	},
+	{
+		"count":13,
+		"name": "BrotherhoodProgressive",
+		"category": ["Brotherhood"],
+		"progression": true
+	},
+	{
+		"count":11,
+		"name": "DawnguardProgressive",
+		"category": ["Dawnguard"],
+		"progression": true
+	},
+	{
+		"count":7,
+		"name": "DragonbornProgressive",
+		"category": ["Dragonborn"],
 		"progression": true
 	},
 	{
@@ -44,7 +68,7 @@
 		"count":1,
 		"name": "Archery",
 		"category": ["Skill","OffensiveSkill"],
-		"useful": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -137,25 +161,25 @@
 		"progression": true
 	},
 	{
-		"count": "7",
+		"count":7,
 		"name": "ProgressiveWeaponTier",
 		"category": ["WeaponTier"],
 		"progression": true
 	},
 	{
-		"count": "5",
+		"count":5,
 		"name": "ProgressiveLightArmorTier",
 		"category": ["ArmorTier"],
 		"useful": true
 	},
 	{
-		"count": "7",
+		"count":7,
 		"name": "ProgressiveHeavyArmorTier",
 		"category": ["ArmorTier"],
 		"useful": true
 	},
 	{
-		"count": "4",
+		"count":4,
 		"name": "ProgressiveSpellTier",
 		"category": ["SpellTier"],
 		"progression": true

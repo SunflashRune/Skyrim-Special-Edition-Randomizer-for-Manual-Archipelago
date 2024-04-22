@@ -1,22 +1,28 @@
 
-Skyrim(Vanilla) Archipelago Manual Randomizer Version 0.5
+Skyrim Special Edition Archipelago Manual Randomizer Version 0.6
 
 This document will attempt to summarize and then detail the various bits of Logic that is used to lock out certain parts of the game until their Items are acquired.
+There is also a Poptracker Pack available at https://github.com/SunflashRune/Skyrim-Special-Edition-Manual-AP-PopTracker-Pack/releases
+If you do not have Poptracker, it is located here https://github.com/black-sliver/PopTracker/releases
+and it's Discord can be found at the following link: https://discord.com/invite/gwThqMCPgK
 
 Summary:
 
-	You begin with access to 1 Offensive-class Skill, 1 of EITHER a Defensive or Support Skill; and Unbound, escaping Helgen. Your two Starting skills are visable at the start of the game, so it is suggested you connect your Manual Client to the Server before you start your game, to possibly pick a race that works well. You will also always acquire 1 Skill(of any kind) after completing Unbound.
+	You begin with access to 1 Offensive-class Skill, 1 of EITHER a Defensive or Support Skill; and Unbound, escaping Helgen. Your two Starting skills are visable at the start of the game, so it is suggested you connect your Manual Client to the Server before you start your game, to possibly pick a race that works well.
+	At character creation and assuming you have the associated skills, you start allowed to equip/wield/cast the following Tiers of equipment: Hide/Fur/Studded/Vampire for Light Armor, Iron/Banded Iron/Ancient Nord for Heavy Armor, Iron and Ancient Nord for Weapons, and Novice for Spells.
+	If you do not have the associated Light/Heavy Skills, you are not allowed to wear ANYTHING that says it is either of those types of Armor. Same thing with missing One-Handed/Two-Handed/Bows, and for Spells.
+	You will also always acquire 1 Skill(of any kind) after completing Unbound.
 	
-	You will now have access to 6 Daedric quest Locations, all 5 Fishing quest Location, 5 Housing Locations, 4 Bounty Locations, all 3 Standing Stones Locations,  and all 3 Word Wall Locations.
+	You will now have access to 2 Fishery Quests (Angler Acquaintances and Catch of the Day), 1 Bounty Objective(Bandit Bounties Complete = 3), and 3 Misc Objectives(Standing Stones Foun = 4, Word Walls Read = 1, and Slay 6 Wolves, 2 Sabre Cats, and 1 Bear).
+
+	Each of the Main Quest Locations, and the Faction Quest Locations; need to be Unlocked with a respective Progressive Item (Main Quest Progressive, Companion Progressive, etc) before you can start their various Quests.
+	All NON-Faction Quest Locations are locked by an amount of Main Quest Progressives, which will be detailed below.
+	Each Main Quest Progressive acquired will grant you the ability to complete the associated Main Quest Location, as well as anywhere from 0-8 SideQuest/Objective/Daedric Locations.
 	
-	Each of the Main Quest Locations, and the Faction Quest Locations, need to be Unlocked before you can complete their various Quests. This unlocking is done by acquiring a certain amount of Progressive quest items.
-	
-	In addition, all Dragon-slaying Locations(General and Bounty) are locked behind three "MainQuestProgressive" Items.
-	
-	Similarly, 5 more Daedric quest Locations also require four "MainQuestProgressive" Items.
-	
-	Finally, the last 3 Daedric quest Locations require twelve "MainQuestProgressive" Items.
-	
+	Of Special Note: The Speech Skill locks ANY persuasion, bribe, or intimidate use. This means that entering Whiterun is techinally locked until you have EITHER Main Quest Progressive 1 (to start Before the Storm in Riverwood, allowing you access to the "Riverwood calls for the Jarl's aid" non-speech skill option with the Guard), or the Speech skill.
+	Riften can be entered by a back door(The Black Briar Meadary near the Fishery), but the front door needs Speech to access via the guard's persuade/bribe option. Bribing still levels up the Speech skill, and is therefore considered a use of the Speech skill.
+	There are several actual AP Locations that require Speech as well, and these will be noted below.
+
 	
 Details:
 	First, I will list each Location and its corresponding logical locking item(if any). Then I will explain in some detail why I settled on each logical lock, for those curious.
@@ -30,23 +36,12 @@ Accessible after Unbound, has no other lock at this time:
 		"Word Walls Read = 1"(Acquire 1 Shout word from a Word Wall.)
 		"Angler Acquaintances Complete"
 		"Catch of the Day Complete"
-		"Slay 6 Wolves, 2 Sabre Cats, and 1 Bear" (Player choice if they count the tutorial bear or not, I usually don't.)
-		
-		"Town Home Owned 1"(Own 1 house in a Hold)
-
-
-		"Architect"(Build 3 wings on one house" ---- Require Simithing
-
-
-
+		"Slay 6 Wolves, 2 Sabre Cats, and 1 Bear" (Tutorial Bear(in Unbound escape) does not count!)
 
 Requires 1 "MainQuestProgressive":
 	"Before the Storm Complete"
 		"Forsworn Bounties Complete = 3"(Same as Bandits, but for Forsworn)
-		
-		
-
-		"Caught in the Rain Complete"
+		"In a Pinch Complete"
 
 Requires 2 "MainQuestProgressive":
 	"Bleak Falls Barrow Complete"
@@ -71,6 +66,9 @@ Requires 4 "MainQuestProgressive":
 		"Forsworn Bounties Complete = 6"
 		"Town Home Owned = 1"
 		"Thane in 3 Holds"
+		"Crustacean Extermination Complete"
+	Dawnguard becomes Accessible
+	Dragonborn becomes Accessible
 	
 Requires 5 "MainQuestProgressive":
 	"Horn of Jurgen Windcaller Note" (Get note and leave dungeon)
@@ -130,20 +128,19 @@ Requires 15 "MainQuestProgressive" AND 1 "Faction Complete"
 	"Alduin Slain" (VICTORY CONDITION, SEED COMPLETE)
 	
 The 3 Factions follow roughly the same pattern as each other:
-Requires CompanionProgressive/CollegeProgressive/GuildProgressive items.
+Requires CompanionProgressive/CollegeProgressive/GuildProgressive/BrotherhoodProgressive/DawnguardProgressive/DragonbornProgressive items.
 
-The first College quest (First Lessons) ALSO Requires ONE OF Destruction/Conjuration/Illusion/Restoration or Alteration.
-	Revaling the Unseen (5 College Progressives) will always Require Destruction for that quest to be in Logic.
+The first College quest (First Lessons) ALSO Requires ONE OF Destruction/Conjuration/Illusion/Alteration, AND Restoration, AND 1 Progressive Spell Tier.
+	Revealing the Unseen (5 College Progressives) will always Require Destruction for that quest to be in Logic.
 The first Companions quest (Take Up Arms) ALSO Requires EITHER one-handed or two-handed skill.
-The first Guild quest (Chance Arrangement) ASLO requires Sneak AND Pickpocket AND Lockpicking.
+The first Guild quest (Chance Arrangement) ALSO requires Sneak AND Pickpocket AND Lockpicking.
+The first Brotherhood quest (Innocence Lost) ALSO requires Sneak AND Lockpicking.
+The first Dawnguard quest (Dawnguard) ALSO requires 4 MainQuestProgressives.
+The first Dragonborn quest (Dragonborn) ALSO requires 4 MainQuestProgressives.
  
 Each following Quest will require at least one "X"Progressive item before you can access the Location.
 
 Of special note:
-
-ANY entry to Whiterun will be 'out of logic' without either A) a MainQuestProgressive that allows you to do the Riverwood conversations and get the 'Riverwood calls for the Jarl's aid' option with the Whiterun gate guard, or B) Speech Skill unlock, allowing you to choose the persuade option. This is mostly important for doing Bandit Bounty quests early on; you won't be able to 'legally' turn in Whiterun Hold Bounties without meeting one of the two options above. There is currently nothing in logic accounting for this, but also shouldn't actually block you from anything at the moment as there is no Whiterun-only stuff.
-
-Riften can be entered by a back door(The Black Briar Meadary near the Fishery), but the front door needs Speech to access via the guard's persuade/bribe option. Bribing still levels up the Speech skill, and is therefore considered a use of the Speech skill.
 
 Hunter's Prey - Slay 3 out of the following list:
 	A Snow Bear
@@ -157,4 +154,3 @@ Hunter's Prey - Slay 3 out of the following list:
 	Chaurus Hunter
 	Vulthuryol (Blackreach!)
 	Naaslaarum & Voslaarum (Dragon Twins around Forgotten Vale)
-
