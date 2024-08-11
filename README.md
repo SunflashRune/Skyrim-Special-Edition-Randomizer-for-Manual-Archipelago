@@ -21,7 +21,7 @@ Manual AP has a Discord server here: https://discord.gg/jsJrxR5X2f
 Your ability to use various Skills will be considered Locked until you have recieved their associated Item which Unlocks their use.
     `So for example, a new character will not be allowed to use Destruction Magic until they have Unlocked that Skill by completing a Location check and eventually recieving that Item.`
 
-The player is not allowed to start Main Quests, Faction Quests(The Companions, College of Winterhold, Thieves' Guild, Dark Brotherhood, Dawnguard, or Dragonborn), or Daedric Quests until you have met certain Unlock requirements. See the [Location Logic Explantion.txt](docs/en_SkyrimSpecialEdition_Location Logic Explanation.txt) file in the docs folder on GitHub, or unzip the .apworld to read it from that doc folder.
+The player is not allowed to start Main Quests, Faction Quests(The Companions, College of Winterhold, Thieves' Guild, Dark Brotherhood, Dawnguard, or Dragonborn), or Daedric Quests until you have met certain Unlock requirements. See the [Location Logic Explanation](docs/en_SkyrimSpecialEdition_Location%20Logic%20Explanation.txt) file in the docs folder on GitHub, or unzip the .apworld to read it from the docs folder therin.
 
 As a Manual Randomizer, everything functions on the honor system. As Skyrim is not actually modified in any way, there is nothing actually preventing you from accessing these Locations or using these Skills except your commitment to playing by the rules.
 
@@ -48,14 +48,17 @@ To do so, once your `.../Archipelago/Players/` folder has all the Yamls you want
 If everything goes as it should, you'll have a file (Named AP_stringofnumbershere.zip) delivered to your `.../Archipelago/Output/` folder.
 
 The simplest next step, and the only one we'll describe here; is to take that zip file and upload it on the AP site and let it do the hosting for you.
+
 https://archipelago.gg/uploads
+
 This will eventually lead to you getting a room assigned, along with connection info (usually something like `archipelago.gg:PortNumbersHere`).
 
-### FINALLY time to connect!
+## FINALLY time to connect!
 
 Go open ArchipelagoLauncher.exe again, and on the right-hand side (you may need to scroll) should be Manual Client.
 At the top, the Server box should read the same as your server host. If you've followed these instructions, it'll be the info you have from the room assigned in the previous step; that archipelago.gg:PortNumberHere line. 
-Manual Game Id box will need to read `Manual_SkyrimSpecialEdition_SunflashRune`  EXACTLY, caps and everything.
+
+The Manual Game Id box will need to read `Manual_SkyrimSpecialEdition_SunflashRune`  EXACTLY, caps and everything.
 You may then click Connect in the top right, and then the window should ask you to put your Player Name (from that Yaml you edited!), into the Command box at the bottom. Be sure to press Enter afterwards.
 That should be it!
 
