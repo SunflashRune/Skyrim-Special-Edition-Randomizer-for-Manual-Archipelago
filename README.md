@@ -19,8 +19,10 @@ Manual AP has a Discord server here: https://discord.gg/jsJrxR5X2f
 ## What is Randomized for Skyrim Special Edition?
 
 Your ability to use various Skills will be considered Locked until you have recieved their associated Item which Unlocks their use.
-    So for example, a new character will not be allowed to use Destruction Magic until they have Unlocked that Skill by completing a Location check and eventually recieving that Item.
-The player is not allowed to start Main Quests, Faction Quests(The Companions, College of Winterhold, Thieves' Guild, Dark Brotherhood, Dawnguard, or Dragonborn), or Daedric Quests until you have met certain Unlock requirements. See the Location Logic Explantion.txt file in the docs folder on GitHub, or unzip the .apworld to read it from that doc folder.
+    `So for example, a new character will not be allowed to use Destruction Magic until they have Unlocked that Skill by completing a Location check and eventually recieving that Item.`
+
+The player is not allowed to start Main Quests, Faction Quests(The Companions, College of Winterhold, Thieves' Guild, Dark Brotherhood, Dawnguard, or Dragonborn), or Daedric Quests until you have met certain Unlock requirements. See the [Location Logic Explantion.txt](docs/en_SkyrimSpecialEdition_Location Logic Explanation.txt) file in the docs folder on GitHub, or unzip the .apworld to read it from that doc folder.
+
 As a Manual Randomizer, everything functions on the honor system. As Skyrim is not actually modified in any way, there is nothing actually preventing you from accessing these Locations or using these Skills except your commitment to playing by the rules.
 
 ## So how do I set up the Manual AP Randomizer for Skyrim Special Edition?
