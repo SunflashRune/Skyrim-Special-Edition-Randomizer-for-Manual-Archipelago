@@ -36,14 +36,14 @@ from .Options import FinalGoal
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
-    """CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
-    CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
-    GuildEnable = get_option_value(multiworld, player, "GuildEnable")
-    BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
-    DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
-    DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
-    GoalSetting = world.options.FinalGoal.value"""
-
+    #CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
+    #CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
+    #GuildEnable = get_option_value(multiworld, player, "GuildEnable")
+    #BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
+    #DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
+    #DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
+    #GoalSetting = world.options.FinalGoal.value
+    pass
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -58,7 +58,8 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
     DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
     DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
-    GoalSetting = world.options.goal.value
+    FishingEnable = get_option_value(multiworld, player, "FishingEnable")
+    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
 
     #Check and make sure you arn't trying to play a Goal that requires a Faction while also having ALL Factions disabled.
     if GoalSetting == FinalGoal.option_AlduinFaction and not CompanionsEnable and not CollegeEnable and not GuildEnable and not BrotherhoodEnable and not DawnguardEnable and not DragonbornEnable:
@@ -67,6 +68,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     if GoalSetting == FinalGoal.option_FactionOnly and not CompanionsEnable and not CollegeEnable and not GuildEnable and not BrotherhoodEnable and not DawnguardEnable and not DragonbornEnable:
         raise Exception("You must have at least one Faction enabled to have the Goal of Faction Only.")
     
+    if GoalSetting == FinalGoal.option_AllFactions and not CompanionsEnable and not CollegeEnable and not GuildEnable and not BrotherhoodEnable and not DawnguardEnable and not DragonbornEnable:
+        raise Exception("You must have at least one Faction enabled to have the Goal of All Factions.")
+
     pass
 
 
@@ -75,9 +79,15 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         if GoalSetting == FinalGoal.option_DragonAck and location.get("ack_enable"):
             logging.info(f"Removing {location['name']} from {player}'s world")
             locationNamesToRemove.append(location["name"])
-        #elif GoalSetting == FinalGoal.option_FactionOnly and location.get("ack_enable"):
-            #logging.info(f"Removing {location['name']} from {player}'s world")
-            #locationNamesToRemove.append(location["name"])
+        elif GoalSetting == FinalGoal.option_FactionOnly and location.get("ack_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
+
+    #If All Factions is NOT your Goal, remove All Factions Complete location.
+    for location in location_table:    
+        if not GoalSetting == FinalGoal.option_AllFactions and location.get("AllFactEnable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
 
 
     #Check for a Faction being disabled, and remove their Locations as needed.
@@ -99,6 +109,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove.append(location["name"])
         elif not DragonbornEnable and location.get("dragon_enable"):
             logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
+        elif not FishingEnable and location.get("fish_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world'")
             locationNamesToRemove.append(location["name"])
 
     # Add your code here to calculate which locations to remove
@@ -126,7 +139,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
     DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
     DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
-    GoalSetting = world.options.goal.value
+    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
 
 
     #Check which Goal option is enabled, and set victory_name to the associated Location.
@@ -134,6 +147,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         victory_name = "Alduin Slain (15)"
     elif GoalSetting == FinalGoal.option_DragonAck:
         victory_name = "Jurgen Horn Returned (7)"
+    elif GoalSetting == FinalGoal.option_AllFactions:
+        victory_name = "All Factions Complete"
     elif GoalSetting == FinalGoal.option_FactionOnly:
         #Create a list of Faction ending Locations, check for a Faction being enabled and remove from the list if not, then randomly pick one.
         FactionList = ["Glory of the Dead Complete (6)", "Eye of Magnus Complete (8)", "Darkness Returns Complete (11)", "Hail Sithis Complete (13)", "Kindred Judgment Complete (11)", "Summit of Apocrypha Complete (7)"]
@@ -162,7 +177,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     item_pool.remove(victory_item)
 
     #Check for if Dragonborn Acknowledged is your Goal, and remove excess Progressives in an attempt to ease generation.
-    if GoalSetting == FinalGoal.option_DragonAck:
+    if GoalSetting == FinalGoal.option_DragonAck or GoalSetting == FinalGoal.option_FactionOnly:
         itemNamesToRemove.extend(["MainQuestProgressive"]*8)
         itemNamesToRemove.extend(["ProgressiveWeaponTier"]*4)
         itemNamesToRemove.extend(["ProgressiveHeavyArmorTier"]*4)
@@ -197,8 +212,8 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)
+        logging.info(f"Removing {itemName} from {player}'s world'") #( Set this to itemName?)
         item_pool.remove(item)
-        #logging.info(f"Removing {item['name']} from {player}'s world'")
 
     return item_pool
 
@@ -234,8 +249,38 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
 
 
-    GoalSetting = world.options.goal.value
-    FactionAdd = lambda state: state.has("FactionComplete", player)
+    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
+    CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
+    CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
+    GuildEnable = get_option_value(multiworld, player, "GuildEnable")
+    BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
+    DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
+    DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
+    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
+    FactionAddSingle = lambda state: state.has("FactionComplete", player)
+    FactionCompletestoAdd = int()
+
+
+    #Check if a Faction is enabled, and add a 1 to FactionCompletestoAdd if so
+    if CompanionsEnable:
+        FactionCompletestoAdd += 1
+    if CollegeEnable:
+        FactionCompletestoAdd += 1
+    if GuildEnable:
+        FactionCompletestoAdd += 1
+    if BrotherhoodEnable:
+        FactionCompletestoAdd += 1
+    if DawnguardEnable:
+        FactionCompletestoAdd += 1
+    if DragonbornEnable:
+        FactionCompletestoAdd += 1
+
+    logging.info(f"There are {FactionCompletestoAdd} Factions Enabled")
+    #AllFactionsActive = sum(FactionCompletestoAdd)
+
+
+
+    #FactionAddAll = lambda state: state.count_group("FactionsDone", player) and FactionCompletestoAdd(state)
 
     #If Alduin + Faction is your Goal, find Alduin Slain Location and add a requirement of a FactionComplete Item to that location.
     if GoalSetting == FinalGoal.option_AlduinFaction:
@@ -245,7 +290,16 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
             if location.name == victory_name:
                 location = world.get_location("Alduin Slain (15)")
                 old_rule = location.access_rule
-                location.access_rule = lambda state: old_rule(state) and FactionAdd(state)
+                location.access_rule = lambda state: old_rule(state) and FactionAddSingle(state)
+    elif GoalSetting ==FinalGoal.option_AllFactions:
+        location = world.get_location("All Factions Complete")
+        victory_name = "All Factions Complete"
+        for location in multiworld.get_filled_locations(player):
+            if location.name == victory_name:
+                location = world.get_location("All Factions Complete")
+                old_rule = location.access_rule
+                #location.access_rule = lambda state: state.count_group("FactionsDone", world.player) >= FactionCompletestoAdd #This works but it slow.
+                location.access_rule = lambda state: state.has_group("FactionsDone", world.player, FactionCompletestoAdd)
 
 
 
@@ -288,7 +342,7 @@ def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
 
 # This is called before slot data is set and provides an empty dict ({}), in case you want to modify it before Manual does
 def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
-    GoalSetting = world.options.goal.value
+    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
 
     slot_data["Goal_Set"] = GoalSetting
     logging.info(f"Goal_Set for player {player} is set to {GoalSetting}")

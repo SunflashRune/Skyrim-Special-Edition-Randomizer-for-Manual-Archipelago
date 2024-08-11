@@ -34,20 +34,20 @@ Accessible after Unbound, has no other lock at this time:
 		"Standing Stones Found = 4"(The Guardian Stones count as 3, per in-game counter)
 		"Bandit Bounties Complete = 3"(Acquire a Bandit-Bounty quest from an Innkeeper, kill the target, and turn-in to the Hold's steward. Do this 3 times for this level.)
 		"Word Walls Read = 1"(Acquire 1 Shout word from a Word Wall.)
-		"Angler Acquaintances Complete"
-		"Catch of the Day Complete"
+		"Angler Acquaintances Complete" (If Fishing is Enabled in your YAML)
+		"Catch of the Day Complete" (If Fishing is Enabled in your YAML)
 		"Slay 6 Wolves, 2 Sabre Cats, and 1 Bear" (Tutorial Bear(in Unbound escape) does not count!)
 
 Requires 1 "MainQuestProgressive":
 	"Before the Storm Complete"
 		"Forsworn Bounties Complete = 3"(Same as Bandits, but for Forsworn)
-		"In a Pinch Complete"
+		"In a Pinch Complete" (If Fishing is Enabled in your YAML)
 
 Requires 2 "MainQuestProgressive":
 	"Bleak Falls Barrow Complete"
 		"Standing Stones Found = 8"
 		"Bandit Bounties Complete = 6"
-		"Caught in the Rain Complete"
+		"Caught in the Rain Complete" (If Fishing is Enabled in your YAML)
 		
 Requires 3 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 	"Dragon Rising Complete"
@@ -66,13 +66,13 @@ Requires 4 "MainQuestProgressive":
 		"Forsworn Bounties Complete = 6"
 		"Town Home Owned = 1"
 		"Thane in 3 Holds"
-		"Crustacean Extermination Complete"
+		"Crustacean Extermination Complete" (If Fishing is Enabled in your YAML)
 	Dawnguard becomes Accessible
 	Dragonborn becomes Accessible
 	
 Requires 5 "MainQuestProgressive":
 	"Horn of Jurgen Windcaller Note" (Get note and leave dungeon)
-		"Frozen Fish Complete"
+		"Frozen Fish Complete" (If Fishing is Enabled in your YAML)
 		"Land Owned = 1"
 		"Dragon Bounties Complete = 3"
 
@@ -98,7 +98,7 @@ Requires 8 "MainQuestProgressive":
 	
 Requires 9 "MainQuestProgressive":
 	"Cornered Rat Complete"
-		"Darkest Depths Complete"
+		"Darkest Depths Complete" (If Fishing is Enabled in your YAML)
 		"Dragons Slain = 10"
 
 Requires 10 "MainQuestProgressive":
@@ -127,7 +127,7 @@ Requires 14 "MainQuestProgressive":
 Requires 15 "MainQuestProgressive" AND 1 "Faction Complete"
 	"Alduin Slain" (VICTORY CONDITION, SEED COMPLETE)
 	
-The 3 Factions follow roughly the same pattern as each other:
+The Factions follow roughly the same pattern as each other:
 Requires CompanionProgressive/CollegeProgressive/GuildProgressive/BrotherhoodProgressive/DawnguardProgressive/DragonbornProgressive items.
 
 The first College quest (First Lessons) ALSO Requires ONE OF Destruction/Conjuration/Illusion/Alteration, AND Restoration, AND 1 Progressive Spell Tier.

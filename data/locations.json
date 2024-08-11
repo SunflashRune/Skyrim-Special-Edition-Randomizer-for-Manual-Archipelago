@@ -753,36 +753,42 @@
 		"name": "Angler Acquaintances Complete",
 		"region": "Misc",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "Catch of the Day Complete",
 		"region": "Misc",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "In a Pinch Complete",
 		"region": "BeforetheStorm",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "Caught in the Rain Complete",
 		"region": "BleakFallsBarrow",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "Crustacean Extermination Complete",
 		"region": "WayoftheVoice",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "Frozen Fish Complete",
 		"region": "HornofJurgenWindcaller",
 		"category": ["Fishing"],
+		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -790,6 +796,13 @@
 		"region": "CorneredRat",
 		"category": ["Fishing"],
 		"ack_enable":["Yes"],
+		"fish_enable":["Yes"],
+		"requires": []
+	},
+	{
+		"name": "All Factions Complete",
+		"region": "Province",
+		"AllFactEnable": ["Yes"],
 		"requires": []
 	}
 ]

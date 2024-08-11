@@ -1,5 +1,5 @@
 
-Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.6
+Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7
 
 	Being an early alpha, this version is more geared towards general play-testing and feedback-creation of the types of Locations and Items.
 	There are plans to create similar versions down the line that are more narrow for those that may be interested, but this version is intentionally wide-ranging in possible 'things-to-do'.
@@ -14,7 +14,7 @@ What does randomization do to this game?
 		
 What is the goal of Skyrim Special Edition Manual AP?
 	The default Goal of this Randomizer is to complete one of the Faction questlines (The Companions, The College of Winterhold, The Thieves' Guild, The Dark Brotherhood, Dawnguard, or Dragonborn), and then kill Aludin.
-	There are a handful of other Goals you can set in your YAML file; for only killing Alduin, only doing part of the Main Questline, or only doing a random Faction questline.
+	There are a handful of other Goals you can set in your YAML file; for only killing Alduin, only doing part of the Main Questline(Dragonborn Acknowledged), completing ALL your enabled Factions, or only doing a random Faction questline.
 	
 	
 What are location checks in Skyrim Special Edition Manual AP?

@@ -33,21 +33,26 @@ from ..Helpers import is_option_enabled, get_option_value
     #range_end = 50
     #default = 50
 
+"""
+Skyrim Special Edition Manual AP Randomizer, Version 0.7
+"""
+
 class FinalGoal(Choice):
     """
     What do you want to be your final Goal?
     Kill Alduin Plus Faction(default): You must complete 1 of your enabled Faction Questlines(Companions/College/Guild/Brotherhood/Dawnguard/Dragonborn) and then kill Alduin in the Main Quest.
     Kill Alduin Only: You must kill Aludin. Removes Faction Complete requirements, but does NOT REMOVE any Enabled Factions from the Location Pool! You may still have to do an amount of your Enabled Factions to get your required items.
-    Dragonborn Acknowledged: You must return the Horn of Jurgen Windcaller and be acknowledged as Dragonborn by the Greybeards. This disables all Locations past those associated with Main Quest Progressives 6(Blade in the Dark).
-    Faction Only: You must complete one of your available Faction Questlines. This does NOT disable any of the Main Quest Locations, due to not having enough Locations otherwise.
-                    **It is STRONGLY suggested you put "Goal Complete" in your start_hints: section above if playing this mode, for now.**
+    Dragonborn Acknowledged: You must return the Horn of Jurgen Windcaller and be acknowledged as Dragonborn by the Greybeards. This disables all Locations past those associated with Main Quest Progressives 6(Blade in the Dark), and also removes about half of the progressive armor/offensive item upgrades to ease generation.
+    Faction Only: You must complete one of your available Faction Questlines. This disables all Locations past those associated with Main Quest Progressives 6(Blade in the Dark), and also removes about half of the progressive armor/offensive item upgrades to ease generation.
+                    **It is STRONGLY suggested you put "Goal Complete" in your start_hints: section (near the bottom of this YAML) if playing this mode, for now.**
+    All Factions: You must complete all of your enabled Faction Questlines.
     """
     display_name = "Final Goal"
     option_AlduinFaction = 0
     option_AlduinOnly = 1
     option_DragonAck = 2
     option_FactionOnly = 3
-    alias_default = 0
+    option_AllFactions = 4
     default = 0
 
 class CompanionsToggle(Toggle):
@@ -80,7 +85,7 @@ class GuildToggle(Toggle):
 class BrotherhoodToggle(Toggle):
     """
     Include the Dark Brotherhood quests in the Location Pool.
-    If enabled, the first quest(Innocence Lost) will require 1 BrotherhoodProgressive Item AND Sneak AND 1 of One-Handed or Two-Handed or Archery acquired to be in logic.
+    If enabled, the first quest(Innocence Lost) will require 1 BrotherhoodProgressive Item AND Sneak AND Lockpicking acquired to be in logic.
     Each following quest will require an additional BrotherhooldProgressive Item.
     """
     display_name = "Brotherhood Toggle"
@@ -89,7 +94,7 @@ class BrotherhoodToggle(Toggle):
 class DawnguardToggle(Toggle):
     """
     Include the Dawnguard quests in the Location Pool.
-    If enabled, the first quest(Dawnguard) will require 1 DawnguardProgressive Item acquired to be in logic.
+    If enabled, the first quest(Dawnguard) will require 1 DawnguardProgressive Item AND 4 MainQuestProgressive Items acquired to be in logic.
     Each following quest will require an additional DawnguardProgressive Item.
     """
     display_name = "Dawnguard Toggle"
@@ -98,27 +103,44 @@ class DawnguardToggle(Toggle):
 class DragonbornToggle(Toggle):
     """
     Include the Dragonborn quests in the Location Pool.
-    If enabled, the first quest(Dragonborn) will require 1 DragonbornProgressive Item acquired to be in logic.
+    If enabled, the first quest(Dragonborn) will require 1 DragonbornProgressive Item AND 4 MainQuestProgressive Items acquired to be in logic.
     Each following quest will require an additional DragonbornProgressive Item.
     """
     display_name = "Dragonborn Toggle"
     default = True
 
+class FishingToggle(Toggle):
+    """
+    Include the Fishing quests in the Location Pool.
+    If enabled, 7 Fishing quests will be added to the Location Pool from Riften Fishery(from both Swims-In-Deep-Water and Viriya).
+    The first two (Angler Acquaintances and Catch of the Day) will not be locked, but all others will require increasing amounts of Main Quest Progressives to access.
+    Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    """
+    display_name = "Fishing Quests Toggle"
+    default = True
+
+#class HuntingToggle(Toggle):
+    #"""
+    #Include the custom Hunting Objectives in the Location Pool.
+    #If enabled, X Hunting Objectives will be added to the Location Pool.
+    #The first one (Novice Hunter) will not be locked, but all others will require increasing amounts of Main Quest Progressives to access.
+    #Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    #"""
+    #display_name = "Hunting Objectives Toggle"
+    #default = True
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
     
-    # Goal
-    options["goal"] = FinalGoal
-
-    # Factions
+    options["FinalGoal"] = FinalGoal
     options["CompanionsEnable"] = CompanionsToggle
     options["CollegeEnable"] = CollegeToggle
     options["GuildEnable"] = GuildToggle
     options["BrotherhoodEnable"] = BrotherhoodToggle
     options["DawnguardEnable"] = DawnguardToggle
     options["DragonbornEnable"] = DragonbornToggle
-
+    options["FishingEnable"] = FishingToggle
+    #options["HuntingEnable"] = HuntingToggle
 
     return options
 
