@@ -128,7 +128,7 @@
 		"count":1,
 		"name": "Enchanting",
 		"category": ["Skill","SupportSkill"],
-		"useful": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -146,7 +146,7 @@
 		"count":1,
 		"name": "Alchemy",
 		"category": ["Skill","SupportSkill"],
-		"useful": true
+		"progression": true
 	},
 	{
 		"count":1,

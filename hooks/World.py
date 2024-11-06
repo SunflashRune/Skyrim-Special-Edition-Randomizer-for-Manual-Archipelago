@@ -36,13 +36,6 @@ from .Options import FinalGoal
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
-    #CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
-    #CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
-    #GuildEnable = get_option_value(multiworld, player, "GuildEnable")
-    #BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
-    #DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
-    #DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
-    #GoalSetting = world.options.FinalGoal.value
     pass
 
 
@@ -59,6 +52,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
     DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
     FishingEnable = get_option_value(multiworld, player, "FishingEnable")
+    HuntingEnable = get_option_value(multiworld, player, "HuntingEnable")
+    BountyEnable = get_option_value(multiworld, player, "BountyEnable")
+    ExplorationEnable = get_option_value(multiworld, player, "ExplorationEnable")
+    HousingEnable = get_option_value(multiworld, player, "HousingEnable")
     GoalSetting = get_option_value(multiworld, player, "FinalGoal")
 
     #Check and make sure you arn't trying to play a Goal that requires a Faction while also having ALL Factions disabled.
@@ -74,14 +71,14 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     pass
 
 
-    #If Dragonborn Acknowledged is your Goal, remove things locked by Main Quest Progressive 7+.
-    for location in location_table:
-        if GoalSetting == FinalGoal.option_DragonAck and location.get("ack_enable"):
-            logging.info(f"Removing {location['name']} from {player}'s world")
-            locationNamesToRemove.append(location["name"])
-        elif GoalSetting == FinalGoal.option_FactionOnly and location.get("ack_enable"):
-            logging.info(f"Removing {location['name']} from {player}'s world")
-            locationNamesToRemove.append(location["name"])
+    #If Dragonborn Acknowledged or Faction Only is your Goal, remove things locked by Main Quest Progressive 7+.
+    #for location in location_table:
+    #    if GoalSetting == FinalGoal.option_DragonAck and location.get("ack_enable"):
+    #        logging.info(f"Removing {location['name']} from {player}'s world")
+    #        locationNamesToRemove.append(location["name"])
+    #    elif GoalSetting == FinalGoal.option_FactionOnly and location.get("ack_enable"):
+    #        logging.info(f"Removing {location['name']} from {player}'s world")
+    #        locationNamesToRemove.append(location["name"])
 
     #If All Factions is NOT your Goal, remove All Factions Complete location.
     for location in location_table:    
@@ -112,6 +109,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             locationNamesToRemove.append(location["name"])
         elif not FishingEnable and location.get("fish_enable"):
             logging.info(f"Removing {location['name']} from {player}'s world'")
+            locationNamesToRemove.append(location["name"])
+        elif not HuntingEnable and location.get("hunt_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
+        elif not BountyEnable and location.get("bounty_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
+        elif not ExplorationEnable and location.get("explore_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location['name'])
+        elif not HousingEnable and location.get("housing_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
             locationNamesToRemove.append(location["name"])
 
     # Add your code here to calculate which locations to remove
@@ -150,7 +159,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     elif GoalSetting == FinalGoal.option_AllFactions:
         victory_name = "All Factions Complete"
     elif GoalSetting == FinalGoal.option_FactionOnly:
-        #Create a list of Faction ending Locations, check for a Faction being enabled and remove from the list if not, then randomly pick one.
+        #Create a list of Faction ending Locations, check for a Faction being enabled and remove from the list if its not, then randomly pick one.
         FactionList = ["Glory of the Dead Complete (6)", "Eye of Magnus Complete (8)", "Darkness Returns Complete (11)", "Hail Sithis Complete (13)", "Kindred Judgment Complete (11)", "Summit of Apocrypha Complete (7)"]
         if not CompanionsEnable:
             FactionList.remove("Glory of the Dead Complete (6)")
@@ -177,12 +186,12 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     item_pool.remove(victory_item)
 
     #Check for if Dragonborn Acknowledged is your Goal, and remove excess Progressives in an attempt to ease generation.
-    if GoalSetting == FinalGoal.option_DragonAck or GoalSetting == FinalGoal.option_FactionOnly:
-        itemNamesToRemove.extend(["MainQuestProgressive"]*8)
-        itemNamesToRemove.extend(["ProgressiveWeaponTier"]*4)
-        itemNamesToRemove.extend(["ProgressiveHeavyArmorTier"]*4)
-        itemNamesToRemove.extend(["ProgressiveLightArmorTier"]*3)
-        itemNamesToRemove.extend(["ProgressiveSpellTier"]*2)
+    #if GoalSetting == FinalGoal.option_DragonAck or GoalSetting == FinalGoal.option_FactionOnly:
+    #    itemNamesToRemove.extend(["MainQuestProgressive"]*8)
+    #    itemNamesToRemove.extend(["ProgressiveWeaponTier"]*4)
+    #    itemNamesToRemove.extend(["ProgressiveHeavyArmorTier"]*4)
+    #    itemNamesToRemove.extend(["ProgressiveLightArmorTier"]*3)
+    #    itemNamesToRemove.extend(["ProgressiveSpellTier"]*2)
 
     #Check if a Faction is enabled, and remove their Progressive Items and a Faction Complete if not.
     if not CompanionsEnable:
@@ -256,7 +265,6 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     BrotherhoodEnable = get_option_value(multiworld, player, "BrotherhoodEnable")
     DawnguardEnable = get_option_value(multiworld, player, "DawnguardEnable")
     DragonbornEnable = get_option_value(multiworld, player, "DragonbornEnable")
-    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
     FactionAddSingle = lambda state: state.has("FactionComplete", player)
     FactionCompletestoAdd = int()
 

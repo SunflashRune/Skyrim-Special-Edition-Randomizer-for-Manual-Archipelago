@@ -112,22 +112,47 @@ class DragonbornToggle(Toggle):
 class FishingToggle(Toggle):
     """
     Include the Fishing quests in the Location Pool.
-    If enabled, 7 Fishing quests will be added to the Location Pool from Riften Fishery(from both Swims-In-Deep-Water and Viriya).
-    The first two (Angler Acquaintances and Catch of the Day) will not be locked, but all others will require increasing amounts of Main Quest Progressives to access.
+    If enabled, Five(5) additional Fishing quests will be added to the Location Pool from Riften Fishery(from both Swims-In-Deep-Water and Viriya).
     Please check the Location Logic Explanation file, or the Mindmap file for more information.
     """
     display_name = "Fishing Quests Toggle"
     default = True
 
-#class HuntingToggle(Toggle):
-    #"""
-    #Include the custom Hunting Objectives in the Location Pool.
-    #If enabled, X Hunting Objectives will be added to the Location Pool.
-    #The first one (Novice Hunter) will not be locked, but all others will require increasing amounts of Main Quest Progressives to access.
-    #Please check the Location Logic Explanation file, or the Mindmap file for more information.
-    #"""
-    #display_name = "Hunting Objectives Toggle"
-    #default = True
+class HuntingToggle(Toggle):
+    """
+    Include the custom Hunting Objectives in the Location Pool.
+    If enabled, Three(3) additional Hunting Objectives will be added to the Location Pool.
+    Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    """
+    display_name = "Hunting Objectives Toggle"
+    default = True
+
+class BountyToggle(Toggle):
+    """
+    Include more Bounty Objectives in the Location Pool.
+    If enabled, Five(5) additional Bounty Objectives will be aded to the Location Pool.
+    Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    """
+    display_name = "Bounty Objectives Toggle"
+    default = True
+
+class ExplorationToggle(Toggle):
+    """
+    Include more Exploration Objectives in the Location Pool.
+    If enabled, Eight(8) additional Exploration Objectives will be added to the Location Pool.
+    Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    """
+    display_name = "Exploration Objectives Toggle"
+    default = True
+
+class HousingToggle(Toggle):
+    """
+    Include more Housing Objectives in the Location Pool.
+    If enabled, Six(6) additional Housing Objectives will be added to the Location Pool.
+    Please check the Location Logic Explanation file, or the Mindmap file for more information.
+    """
+    display_name = "Housing Objectives Toggle"
+    default = True
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
@@ -140,7 +165,10 @@ def before_options_defined(options: dict) -> dict:
     options["DawnguardEnable"] = DawnguardToggle
     options["DragonbornEnable"] = DragonbornToggle
     options["FishingEnable"] = FishingToggle
-    #options["HuntingEnable"] = HuntingToggle
+    options["HuntingEnable"] = HuntingToggle
+    options["BountyEnable"] = BountyToggle
+    options["ExplorationEnable"] = ExplorationToggle
+    options["HousingEnable"] = HousingToggle
 
     return options
 

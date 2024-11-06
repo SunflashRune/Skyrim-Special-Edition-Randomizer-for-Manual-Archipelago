@@ -519,7 +519,7 @@
 		"name": "House of Horrors Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": "|Speech|"
+		"requires": "|Speech| AND |One-Handed|"
 	},
 	{
 		"name": "Ill Met By Moonlight Complete",
@@ -580,7 +580,7 @@
 		"region": "DaedraTier3",
 		"category": ["Daedric"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": "|One-Handed|"
 	},
 	{
 		"name": "Discerning the Transmundane Complete",
@@ -604,167 +604,64 @@
 		"requires": []
 	},
 	{
-		"name": "Bandit Bounties Complete = 3",
-		"region": "Radiants",
-		"category": ["Radiants","Bounties"],
-		"requires": []
-	},
-	{
-		"name": "Bandit Bounties Complete = 6",
-		"region": "BleakFallsBarrow",
-		"category": ["Radiants","Bounties"],
-		"requires": []
-	},
-	{
-		"name": "Forsworn Bounties Complete = 3",
+		"name": "Den Clearer (2 Animal Dens)",
 		"region": "BeforetheStorm",
-		"category": ["Radiants","Bounties"],
-		"requires": []
+		"category": ["Generic"]
 	},
 	{
-		"name": "Forsworn Bounties Complete = 6",
-		"region": "WayoftheVoice",
-		"category": ["Radiants","Bounties"],
-		"requires": []
+		"name": "Pounch-Out (Win 3 Brawls)",
+		"region": "BleakFallsBarrow",
+		"category": ["Generic"]
 	},
 	{
-		"name": "Dragon Bounties Complete = 3",
-		"region": "HornofJurgenWindcaller",
-		"category": ["Radiants","Bounties"],
-		"requires": []
-	},
-	{
-		"name": "Dragon Bounties Complete = 6",
-		"region": "JurgenHornReturned",
-		"category": ["Radiants","Bounties"],
-		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Slay 6 Wolves & 2 SabreCats & 1 Bear",
-		"region": "Radiants",
-		"category": ["Radiants","Slaying"],
-		"requires": []
-	},
-	{
-		"name": "Slay 3 Hunters Prey",
-		"region": "ElderKnowledge",
-		"category": ["Radiants","Slaying"],
-		"ack_enable":["Yes"],
-		"requires": []
+		"name": "Mandatory Maintenance (5 Dwarvern Spiders)",
+		"region": "DragonRising",
+		"category": ["Generic"]
 	},
 	{
 		"name": "Dragons Slain = 2",
 		"region": "DragonRising",
-		"category": ["Slaying"],
+		"category": ["Generic"],
 		"requires": []
+	},
+	{
+		"name": "Barovian Housekeeping (2 Vampire Lairs)",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Generic"]
+	},
+	{
+		"name": "Skilled (3 Skills to 30+)",
+		"region": "BladeintheDark",
+		"category": ["Generic"]
 	},
 	{
 		"name": "Dragons Slain = 6",
 		"region": "BladeintheDark",
-		"category": ["Slaying"],
+		"category": ["Generic"],
 		"requires": []
+	},
+	{
+		"name": "Crafter (5 Unique Smithed OR Enchanted OR Brewed Items)",
+		"region": "JurgenHornReturned",
+		"category": ["Generic"],
+		"ack_enable":["Yes"],
+		"requires": "|Smithing| OR |Enchanting| OR |Alchemy|"
 	},
 	{
 		"name": "Dragons Slain = 10",
 		"region": "CorneredRat",
-		"category": ["Slaying"],
+		"category": ["Generic"],
 		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Word Wall Read = 1",
-		"region": "Misc",
-		"category": ["Walls"],
-		"requires": []
-	},
-	{
-		"name": "Word Walls Read = 3",
-		"region": "DragonRising",
-		"category": ["Walls"],
-		"requires": []
-	},
-	{
-		"name": "Word Walls Read = 5",
-		"region": "DiplomaticImmunity",
-		"category": ["Walls"],
-		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Town Home Owned = 1",
-		"region": "WayoftheVoice",
-		"category": ["Housing"],
-		"requires": []
-	},
-	{
-		"name": "Town Homes Owned = 3",
-		"region": "JurgenHornReturned",
-		"category": ["Housing"],
-		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Town Homes Owned = 5",
-		"region": "ThroatoftheWorld",
-		"category": ["Housing"],
-		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Standing Stones Found = 4",
-		"region": "Misc",
-		"category": ["Stones"],
-		"requires": []
-	},
-	{
-		"name": "Standing Stones Found = 8",
-		"region": "BleakFallsBarrow",
-		"category": ["Stones"],
-		"requires": []
-	},
-	{
-		"name": "Standing Stones Found = 13",
-		"region": "DiplomaticImmunity",
-		"category": ["Stones"],
-		"ack_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Thane Status = 3",
-		"region": "WayoftheVoice",
-		"category": ["Housing"],
-		"requires": []
-	},
-	{
-		"name": "Land Owned = 1",
-		"region": "HornofJurgenWindcaller",
-		"category": ["Housing"],
-		"requires": []
-	},
-	{
-		"name": "Build 3 Wings on 1 Land",
-		"region": "AlduinsWall",
-		"category": ["Housing"],
-		"ack_enable":["Yes"],
-		"requires": "|Smithing|"
-	},
-	{
-		"name": "Angler Acquaintances Complete",
-		"region": "Misc",
-		"category": ["Fishing"],
-		"fish_enable":["Yes"],
-		"requires": []
-	},
-	{
-		"name": "Catch of the Day Complete",
-		"region": "Misc",
-		"category": ["Fishing"],
-		"fish_enable":["Yes"],
 		"requires": []
 	},
 	{
 		"name": "In a Pinch Complete",
+		"region": "Misc",
+		"category": ["Fishing"],
+		"requires": []
+	},
+	{
+		"name": "Catch of the Day Complete",
 		"region": "BeforetheStorm",
 		"category": ["Fishing"],
 		"fish_enable":["Yes"],
@@ -792,12 +689,202 @@
 		"requires": []
 	},
 	{
-		"name": "Darkest Depths Complete",
+		"name": "Tusked Terror Complete",
 		"region": "CorneredRat",
 		"category": ["Fishing"],
 		"ack_enable":["Yes"],
 		"fish_enable":["Yes"],
 		"requires": []
+	},
+	{
+		"name": "Hunting Novice",
+		"region": "Radiants",
+		"category": ["Hunting"],
+		"requires": []
+	},
+	{
+		"name": "Hunting Skilled",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Hunting"],
+		"hunt_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Hunting Expert",
+		"region": "DiplomaticImmunity",
+		"category": ["Hunting"],
+		"ack_enable":["Yes"],
+		"hunt_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Hunting Legendary",
+		"region": "ElderKnowledge",
+		"category": ["Hunting"],
+		"ack_enable":["Yes"],
+		"hunt_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Bandit Bounties Complete = 3",
+		"region": "Radiants",
+		"category": ["Bounties"],
+		"requires": []
+	},
+	{
+		"name": "Bandit Bounties Complete = 6",
+		"region": "BleakFallsBarrow",
+		"category": ["Bounties"],
+		"bounty_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Forsworn Bounties Complete = 3",
+		"region": "BeforetheStorm",
+		"category": ["Bounties"],
+		"bounty_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Forsworn Bounties Complete = 6",
+		"region": "WayoftheVoice",
+		"category": ["Bounties"],
+		"bounty_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Dragon Bounties Complete = 3",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Bounties"],
+		"bounty_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Dragon Bounties Complete = 6",
+		"region": "JurgenHornReturned",
+		"category": ["Bounties"],
+		"ack_enable":["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 4",
+		"region": "Misc",
+		"category": ["Exploration"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 8",
+		"region": "BleakFallsBarrow",
+		"category": ["Exploration"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Standing Stones Found = 13",
+		"region": "DiplomaticImmunity",
+		"category": ["Exploration"],
+		"explore_enable": ["Yes"],
+		"ack_enable":["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Word Wall Read = 1",
+		"region": "Misc",
+		"category": ["Exploration"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Word Walls Read = 3",
+		"region": "DragonRising",
+		"category": ["Exploration"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Word Walls Read = 6",
+		"region": "DiplomaticImmunity",
+		"category": ["Exploration"],
+		"explore_enable": ["Yes"],
+		"ack_enable":["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Miner Sixty-Niner ( 6 Mines and Caves)",
+		"region": "AlduinsWall",
+		"category": ["Exploration"],
+		"ack_enable":["Yes"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Eminent Domain (6 Forts)",
+		"region": "ThroatoftheWorld",
+		"category": ["Exploration"],
+		"ack_enable":["Yes"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Archaeologist (6 Nordic Ruins)",
+		"region": "AlduinsBane",
+		"category": ["Exploration"],
+		"ack_enable":["Yes"],
+		"explore_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Town Home Owned = 1",
+		"region": "WayoftheVoice",
+		"category": ["Housing"],
+		"requires": []
+	},
+	{
+		"name": "Land Owned = 1",
+		"region": "HornofJurgenWindcaller",
+		"category": ["Housing"],
+		"housing_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Town Homes Owned = 3",
+		"region": "JurgenHornReturned",
+		"category": ["Housing"],
+		"ack_enable":["Yes"],
+		"housing_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Land Owned = 3",
+		"region": "CorneredRat",
+		"category": ["Housing"],
+		"ack_enable": ["Yes"],
+		"housing_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Main Hall",
+		"region": "DiplomaticImmunity",
+		"category": ["Housing"],
+		"ack_enable": ["Yes"],
+		"housing_enable": ["Yes"],
+		"requires": "|Smithing|"
+	},
+	{
+		"name": "Town Homes Owned = 5",
+		"region": "ThroatoftheWorld",
+		"category": ["Housing"],
+		"ack_enable": ["Yes"],
+		"housing_enable": ["Yes"],
+		"requires": []
+	},
+	{
+		"name": "Full Manor on 1 Land",
+		"region": "ElderKnowledge",
+		"category": ["Housing"],
+		"ack_enable": ["Yes"],
+		"housing_enable": ["Yes"],
+		"requires": "|Smithing|"
 	},
 	{
 		"name": "All Factions Complete",

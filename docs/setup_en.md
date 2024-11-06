@@ -8,7 +8,7 @@
 
 
 Download the manual_skyrimspecialedition_sunflashrune.apworld
-Copy the .apworld file to your .../Archipelago/custom_worlds/ folder.
+Run the apworld file. It should, after a few moments, give you a box alerting you that it has successfully installed the apworld to your Archipelago setup.
 In your .../Archipelago/ folder, run ArchipelagoLauncher.exe
 From there, you should click the 'Generate Template Options' button the left-hand side. (NOTE: If you had the Launcher open before moving the .apworld into your custom_worlds folder, you MUST close and relaunch the Launcher in order for the program to generate the Template properly.)
 Go to your .../Archipelago/Players/Templates/ folder, and copy the manual_skyrimspecialedition_sunflashrune.yaml file found therein.
