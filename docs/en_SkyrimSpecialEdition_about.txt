@@ -1,5 +1,5 @@
 
-Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7
+Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7.2
 
 	Being an early alpha, this version is more geared towards general play-testing and feedback-creation of the types of Locations and Items.
 	There are plans to create similar versions down the line that are more narrow for those that may be interested, but this version is intentionally wide-ranging in possible 'things-to-do'.
@@ -18,11 +18,11 @@ What is the goal of Skyrim Special Edition Manual AP?
 	
 	
 What are location checks in Skyrim Special Edition Manual AP?
-	Locations range from the major quest lines, as well as the Daedric and some Fishing quests; to custom secondary objectives(visit 4/8/13 standing stones, slay 2/6/10 dragons, own all 5 Town homes, etc) and the like.
+	Locations range from the Main Quest and major Quest-Lines(College/Guild/Companions/Brotherhood/Dawnguard/Dragonborn) as well as all the Daedric Quests, to several of the Fishery quests, and a lot of custom Objective Locations like Hunting, Exploration, and the like.
 	
 	
 Which items can be in another player's world?
 
-	Your various Skills, Weapon and Armor Tiers(Steel/Elven/Dwarven/Etc), Spell Tiers (Novice/Adept/etc); and Quest Progression for the 4 major quest lines(College/Guild/Companions/Main Quest) are all Items and must be found before you can complete the associated quest.
+	Your various Skills, Weapon and Armor Tiers(Steel/Elven/Dwarven/Etc), Spell Tiers (Novice/Adept/etc); and Quest Progression for the Main Quest as well as major Faction Quest-lines(College/Guild/Companions/Brotherhood/Dawnguard/Dragonborn) are all Items and must be found before you can complete the associated quest.
 	
 	

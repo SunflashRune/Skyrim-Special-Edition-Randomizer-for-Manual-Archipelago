@@ -313,7 +313,7 @@
 <node CREATED="1708324772291" ID="ID_75260275" MODIFIED="1730840508494" TEXT="Alduin&apos;s Wall Complete">
 <icon BUILTIN="bookmark"/>
 </node>
-<node CREATED="1728962177287" ID="ID_1885824004" MODIFIED="1730842316042" TEXT="Miner Sixty-Niner (Cleary 6 Mines and Caves)">
+<node CREATED="1728962177287" ID="ID_1885824004" MODIFIED="1730868578127" TEXT="Miner Sixty-Niner (Clear 6 Mines and Caves)">
 <icon BUILTIN="licq"/>
 </node>
 </node>

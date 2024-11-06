@@ -2,82 +2,97 @@
 Skyrim Special Edition Archipelago Manual Randomizer Version 0.6
 
 This document will attempt to summarize and then detail the various bits of Logic that is used to lock out certain parts of the game until their Items are acquired.
-There is also a Poptracker Pack available at https://github.com/SunflashRune/Skyrim-Special-Edition-Manual-AP-PopTracker-Pack/releases
-If you do not have Poptracker, it is located here https://github.com/black-sliver/PopTracker/releases
+There is also a Poptracker Pack available at https://github.com/SunflashRune/Skyrim-Special-Edition-Manual-AP-PopTracker-Pack/releases/latest
+If you do not have Poptracker, it is located here https://github.com/black-sliver/PopTracker/releases/latest
 and it's Discord can be found at the following link: https://discord.com/invite/gwThqMCPgK
 
 Summary:
 
-	You begin with access to 1 Offensive-class Skill, 1 of EITHER a Defensive or Support Skill; and Unbound, escaping Helgen. Your two Starting skills are visable at the start of the game, so it is suggested you connect your Manual Client to the Server before you start your game, to possibly pick a race that works well.
+	Your Goal can be one of five different options: 
+	Alduin + Faction -- Complete a Faction Quest-line(By default; these could be any of the Companions, College, Guild, Brotherhood, Dawnguard, or Dragonborn quest-lines) and then kill Alduin.
+	Alduin Only -- Kill Alduin. Completing a Faction Quest-line might still be required for an Item, but you are not hard-required to beat one otherwise.
+	Dragonborn Acknowledged -- Return the Horn of Jurgen Windcaller and be properly greeted by the Greybeards. This will result in a shorter game then the first two options.
+	Faction Only -- Complete one of a randomly selected(and enabled) Faction Quest-line. STRONGLY recommended you put 'Goal Complete' in your start_hints: section of your Yaml to know which Faction is required to win.
+	All Factions -- Complete ALL enabled Faction Quest-lines. Note that slaying Alduin may be required depending on which Item lands where for either this option or the previous one.
+
+	You begin with access to 1 Offensive-class Skill, 1 of EITHER a Defensive or Support Skill; and Unbound, escaping Helgen. Your two Starting skills are visible at the start of the game, so it is suggested you connect your Manual Client to the Server before you start your game, to possibly pick a race that works well.
 	At character creation and assuming you have the associated skills, you start allowed to equip/wield/cast the following Tiers of equipment: Hide/Fur/Studded/Vampire for Light Armor, Iron/Banded Iron/Ancient Nord for Heavy Armor, Iron and Ancient Nord for Weapons, and Novice for Spells.
 	If you do not have the associated Light/Heavy Skills, you are not allowed to wear ANYTHING that says it is either of those types of Armor. Same thing with missing One-Handed/Two-Handed/Bows, and for Spells.
 	You will also always acquire 1 Skill(of any kind) after completing Unbound.
 	
-	You will now have access to 2 Fishery Quests (Angler Acquaintances and Catch of the Day), 1 Bounty Objective(Bandit Bounties Complete = 3), and 3 Misc Objectives(Standing Stones Foun = 4, Word Walls Read = 1, and Slay 6 Wolves, 2 Sabre Cats, and 1 Bear).
+	You will now have access to a few starting Locations. More will become available as you acquire Main Quest Progressives, and if their associated Categories were enabled in your Yaml.
 
 	Each of the Main Quest Locations, and the Faction Quest Locations; need to be Unlocked with a respective Progressive Item (Main Quest Progressive, Companion Progressive, etc) before you can start their various Quests.
 	All NON-Faction Quest Locations are locked by an amount of Main Quest Progressives, which will be detailed below.
 	Each Main Quest Progressive acquired will grant you the ability to complete the associated Main Quest Location, as well as anywhere from 0-8 SideQuest/Objective/Daedric Locations.
 	
-	Of Special Note: The Speech Skill locks ANY persuasion, bribe, or intimidate use. This means that entering Whiterun is techinally locked until you have EITHER Main Quest Progressive 1 (to start Before the Storm in Riverwood, allowing you access to the "Riverwood calls for the Jarl's aid" non-speech skill option with the Guard), or the Speech skill.
-	Riften can be entered by a back door(The Black Briar Meadary near the Fishery), but the front door needs Speech to access via the guard's persuade/bribe option. Bribing still levels up the Speech skill, and is therefore considered a use of the Speech skill.
+	Of Special Note: The Speech Skill locks ANY persuasion, bribe, or intimidate use. This means that entering Whiterun is technically locked until you have EITHER Main Quest Progressive 1 (to start Before the Storm in Riverwood, allowing you access to the "Riverwood calls for the Jarl's aid" non-speech skill option with the Guard), or the Speech skill.
+	Riften can be entered by a back door(The Black Briar Meadery near the Fishery), but the front door needs Speech to access via the guard's persuade/bribe option. Bribing still levels up the Speech skill, and is therefore considered a use of the Speech skill.
 	There are several actual AP Locations that require Speech as well, and these will be noted below.
 
 	
 Details:
-	First, I will list each Location and its corresponding logical locking item(if any). Then I will explain in some detail why I settled on each logical lock, for those curious.
+	First, I will list each Location and its corresponding logical locking item(if any). Most Locations will have a Category that you may disable in your Yaml, to remove Locations in that Category from generation.
+	If they do not have a [Category] listed, they can be assumed to always be enabled.
 	
 
 Start of the game:
 		"Unbound Complete"(Escape Helgen, currently always awards a random Skill)
 Accessible after Unbound, has no other lock at this time:
-		"Standing Stones Found = 4"(The Guardian Stones count as 3, per in-game counter)
+		"In a Pinch Complete"
+		"Hunting Novice"(Hunt 6 Wolves and 1 Bear(Tutorial Bear does not count!))
 		"Bandit Bounties Complete = 3"(Acquire a Bandit-Bounty quest from an Innkeeper, kill the target, and turn-in to the Hold's steward. Do this 3 times for this level.)
-		"Word Walls Read = 1"(Acquire 1 Shout word from a Word Wall.)
-		"Angler Acquaintances Complete" (If Fishing is Enabled in your YAML)
-		"Catch of the Day Complete" (If Fishing is Enabled in your YAML)
-		"Slay 6 Wolves, 2 Sabre Cats, and 1 Bear" (Tutorial Bear(in Unbound escape) does not count!)
+		"Standing Stones Found = 4"(The Guardian Stones count as 3, per in-game counter)
+		"Word Walls Read = 1"[Exploration](Acquire 1 Shout word from a Word Wall.)
 
 Requires 1 "MainQuestProgressive":
 	"Before the Storm Complete"
-		"Forsworn Bounties Complete = 3"(Same as Bandits, but for Forsworn)
-		"In a Pinch Complete" (If Fishing is Enabled in your YAML)
+		"Den Clearer"(2 Animal Dens)
+		"Catch of the Day"[Fishing]
+		"Forsworn Bounties Complete = 3"[Bounties](Same as Bandits, but for Forsworn)
 
 Requires 2 "MainQuestProgressive":
 	"Bleak Falls Barrow Complete"
-		"Standing Stones Found = 8"
-		"Bandit Bounties Complete = 6"
-		"Caught in the Rain Complete" (If Fishing is Enabled in your YAML)
+		"Punch Out"(Win 3 Brawls)
+		"Caught in the Rain Complete"[Fishing]
+		"Bandit Bounties Complete = 6"[Bounties]
+		"Standing Stones Found = 8"[Exploration]
+
+
 		
 Requires 3 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 	"Dragon Rising Complete"
-		"Word Walls Read = 3"
+		"Mandatory Maintenance"(Kill 5 Dwarven Spiders)
 		"Dragons Slain = 2"(Mirmulinr, from Dragon Rising itself, counts as 1)
+		"Word Walls Read = 3"[Exploration]
 		Daedric Tier 1 Quests
-			"Black Star Complete" (Requires Speech)
+			"Black Star Complete" {Requires Speech}
 			"Ill Met By Moonlight Complete"
-			"House of Horrors Complete" (Requires Speech)
-			"Taste of Death Complete" (Requires Speech)
+			"House of Horrors Complete" {Requires Speech AND One-Handed}
+			"Taste of Death Complete" {Requires Speech}
 			"Mind of Madness Complete"
 			"Waking Nightmare Complete"
 
 Requires 4 "MainQuestProgressive":
 	"Way of the Voice Complete"
-		"Forsworn Bounties Complete = 6"
+		"Crustacean Extermination Complete"[Fishing]
+		"Forsworn Bounties Complete = 6"[Bounties]
 		"Town Home Owned = 1"
-		"Thane in 3 Holds"
-		"Crustacean Extermination Complete" (If Fishing is Enabled in your YAML)
-	Dawnguard becomes Accessible
-	Dragonborn becomes Accessible
+
+	Dawnguard Quests becomes Accessible(Requires Dawnguard Progressives)
+	Dragonborn Quests becomes Accessible(Requires Dragonborn Progressives)
 	
 Requires 5 "MainQuestProgressive":
 	"Horn of Jurgen Windcaller Note" (Get note and leave dungeon)
-		"Frozen Fish Complete" (If Fishing is Enabled in your YAML)
-		"Land Owned = 1"
+		"Barovian Housekeeping"(Clear 2 Vampire Lairs)
+		"Frozen Fish Complete"[Fishing]
+		"Hunting Skilled"[Hunting](Hunt 3 Ice Wolves and 2 Sabre cats ||OR|| 3 Frostbite Spiders and 2 Trolls)
 		"Dragon Bounties Complete = 3"
+		"Land Owned = 1"[Housing]
 
 Requires 6 "MainQuestProgressive":
 	"Blade in the Dark Complete"
+		"Skilled"(3 Skills to 30+)
 		"Dragons Slain = 6"
 		Daedric Tier 2 Quests
 			"Daedra's Best Friend Complete"
@@ -88,44 +103,51 @@ Requires 6 "MainQuestProgressive":
 
 Requires 7 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Jurgen Horn Complete"(Actually turn in the Horn to Arengir after getting it from Delphine)
-		"Town Home Owned = 3"
+		"Crafter"(Create 5 UNIQUE Smithed OR Enchanted OR Brewed Items) {Requires ONE OF Smithing, Enchanting, or Alchemy}
 		"Dragon Bounties Complete = 6"
+		"Town Home Owned = 3"[Housing]
 
 Requires 8 "MainQuestProgressive":
 	"Diplomatic Immunity Complete"
-		"Standing Stones Found = 13"(This should be all of them!)
-		"Word Walls Read = 5"
+		"Hunting Expert"[Hunting](Hunt 2 Cave Bears and 3 Spriggans ||OR|| 2 Hagravens and 3 Drauger Wights)
+		"Word Walls Read = 6"[Exploration]
+		"Standing Stones Found = 13"[Exploration](This should be all of them!)
+		"Land Owned = 3"[Housing]
 	
 Requires 9 "MainQuestProgressive":
 	"Cornered Rat Complete"
-		"Darkest Depths Complete" (If Fishing is Enabled in your YAML)
 		"Dragons Slain = 10"
+		"Tusked Terror Complete"[Fishing]
+		"Main Hall"[Housing](Build a Main Hall with no Wings on a plot of land){Requires Smithing}
 
 Requires 10 "MainQuestProgressive":
 	"Aludins Wall Complete"
-		"Build 3 Wings on Land" (Requires Smithing)
+		"Miner Sixty-Niner"[Exploration](Clear 6 Mines and Caves)
 
 Requires 11 "MainQuestProgressive":
 	"Throat of the World Complete"
-		"Town Homes Owned = 5
+		"Eminent Domain"[Exploration](Clear 6 Forts)
+		"Town Homes Owned = 5"[Housing]
 
 Requires 12 "MainQuestProgressive":
 	"Elder Knowledge Complete"
-		"Slay 3 Hunter's Prey"(Custom Objective, see Notes below)
+		"Hunting Legendary"[Hunting](Hunt 2 Dragon Priests and 3 Dwarven Centurions)
+		"Full Manor on 1 Land"[Housing](Complete all 3 wings on a plot of land){Requires Smithing}
 		Daedric Tier 3 Quests
-			"Boethiahs Calling Complete"
+			"Boethiahs Calling Complete"{Requires One-Handed}
 			"Discerning the Transmundane Complete"
-			"Pieces of the Past Complete" (Requires Speech)
-			"Whispering Door Complete"(Of note, simply retrieving the Blade is all that's required)
+			"Pieces of the Past Complete"{Requires Speech}
+			"Whispering Door Complete"(Simply retrieving the Blade is all that's required)
 
 Requires 13 "MainQuestProgressive":
 	"Alduins bane Complete"
+		"Archaeologist"[Explorer](Clear 6 Nordic Ruins)
 	
 Requires 14 "MainQuestProgressive":
 	"The Fallen Complete"
 	
 Requires 15 "MainQuestProgressive" AND 1 "Faction Complete"
-	"Alduin Slain" (VICTORY CONDITION, SEED COMPLETE)
+	"Alduin Slain"
 	
 The Factions follow roughly the same pattern as each other:
 Requires CompanionProgressive/CollegeProgressive/GuildProgressive/BrotherhoodProgressive/DawnguardProgressive/DragonbornProgressive items.
@@ -138,19 +160,4 @@ The first Brotherhood quest (Innocence Lost) ALSO requires Sneak AND Lockpicking
 The first Dawnguard quest (Dawnguard) ALSO requires 4 MainQuestProgressives.
 The first Dragonborn quest (Dragonborn) ALSO requires 4 MainQuestProgressives.
  
-Each following Quest will require at least one "X"Progressive item before you can access the Location.
-
-Of special note:
-
-Hunter's Prey - Slay 3 out of the following list:
-	A Snow Bear
-	A Snow Sabre Cat
-	A Mammoth
-	An Ice Wolf
-	The Frost Giant (Forgotten Vale)
-	Nimhe (Giant Frostbite Spider in Nchuand-Zel Excavation Site)
-	Spriggan Earth-Mother
-	Vale Sabre Cat (Darkfall Cave/Forgotten Vale)
-	Chaurus Hunter
-	Vulthuryol (Blackreach!)
-	Naaslaarum & Voslaarum (Dragon Twins around Forgotten Vale)
+Each following Quest will require at least one additional "X"Progressive item before you can access the Location.
