@@ -2,7 +2,7 @@
 	{
 		"count":1,
 		"name": "Goal Complete",
-		"progression":true
+		"progression": true
 	},
 	{	"count":15,
 		"name": "MainQuestProgressive",
@@ -183,5 +183,11 @@
 		"name": "ProgressiveSpellTier",
 		"category": ["SpellTier"],
 		"progression": true
+	},
+	{
+		"count":4,
+		"name": "DragonTail",
+		"category": ["Junk"],
+		"filler": true
 	}
 ]

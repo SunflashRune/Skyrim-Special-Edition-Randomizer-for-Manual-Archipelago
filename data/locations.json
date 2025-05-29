@@ -137,6 +137,7 @@
 		"region": "BloodsHonor",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -144,6 +145,7 @@
 		"region": "PurityofRevenge",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -151,6 +153,7 @@
 		"region": "PurityofRevenge",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -187,6 +190,7 @@
 		"region": "RevealingtheUnseen",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": "|Destruction|"
 	},
 	{
@@ -194,6 +198,7 @@
 		"region": "Containment",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -201,6 +206,7 @@
 		"region": "StaffofMagnus",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -208,6 +214,7 @@
 		"region": "EyeofMagnus",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -251,6 +258,7 @@
 		"region": "SpeakingwithSilence",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -258,6 +266,7 @@
 		"region": "HardAnswers",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -265,6 +274,7 @@
 		"region": "Pursuit",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -272,6 +282,7 @@
 		"region": "TrinityRestored",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -279,6 +290,7 @@
 		"region": "Blindsighted",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -286,6 +298,7 @@
 		"region": "DarknessReturns",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -329,6 +342,7 @@
 		"region": "The Silence Has Been Broken",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -336,6 +350,7 @@
 		"region": "Bound Until Death",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -343,6 +358,7 @@
 		"region": "Breaching Security",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -350,6 +366,7 @@
 		"region": "The Cure For Madness",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -357,6 +374,7 @@
 		"region": "Recipe for Disaster",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -364,6 +382,7 @@
 		"region": "To Kill an Empire",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -371,6 +390,7 @@
 		"region": "Death Incarnate",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -378,6 +398,7 @@
 		"region": "Hail Sithis",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -414,6 +435,7 @@
 		"region": "Prophet",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -421,6 +443,7 @@
 		"region": "Scroll Scouting",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -428,6 +451,7 @@
 		"region": "Chasing Echoes",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -435,6 +459,7 @@
 		"region": "Seeking Disclosure",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -442,6 +467,7 @@
 		"region": "Unseen Visions",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -449,6 +475,7 @@
 		"region": "Touching the Sky",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -456,6 +483,7 @@
 		"region": "Kindred Judgment",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -485,6 +513,7 @@
 		"region": "Cleansing the Stones",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -492,6 +521,7 @@
 		"region": "The Path of Knowledge",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -499,6 +529,7 @@
 		"region": "The Gardener of Men",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": []
 	},
 	{
@@ -506,6 +537,7 @@
 		"region": "At the Summit of Apocrypha",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
+		"ack_enable":["Yes"],
 		"requires": [],
 		"place_item": ["FactionComplete"]
 	},
@@ -609,7 +641,7 @@
 		"category": ["Generic"]
 	},
 	{
-		"name": "Pounch-Out (Win 3 Brawls)",
+		"name": "Punch-Out (Win 3 Brawls)",
 		"region": "BleakFallsBarrow",
 		"category": ["Generic"]
 	},

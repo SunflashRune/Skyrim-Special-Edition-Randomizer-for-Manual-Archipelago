@@ -72,10 +72,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 
     #If Dragonborn Acknowledged or Faction Only is your Goal, remove things locked by Main Quest Progressive 7+.
-    #for location in location_table:
-    #    if GoalSetting == FinalGoal.option_DragonAck and location.get("ack_enable"):
-    #        logging.info(f"Removing {location['name']} from {player}'s world")
-    #        locationNamesToRemove.append(location["name"])
+    for location in location_table:
+        if GoalSetting == FinalGoal.option_DragonAck and location.get("ack_enable"):
+            logging.info(f"Removing {location['name']} from {player}'s world")
+            locationNamesToRemove.append(location["name"])
     #    elif GoalSetting == FinalGoal.option_FactionOnly and location.get("ack_enable"):
     #        logging.info(f"Removing {location['name']} from {player}'s world")
     #        locationNamesToRemove.append(location["name"])
@@ -193,35 +193,69 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     #    itemNamesToRemove.extend(["ProgressiveLightArmorTier"]*3)
     #    itemNamesToRemove.extend(["ProgressiveSpellTier"]*2)
 
+    if GoalSetting == FinalGoal.option_DragonAck:
+        itemNamesToRemove.extend(["MainQuestProgressive"]*6)
+    #    itemNamesToRemove.extend(["CompanionProgressive"]*3)
+    #    itemNamesToRemove.extend(["CollegeProgressive"]*4)
+    #    itemNamesToRemove.extend(["GuildProgressive"]*6)
+    #    itemNamesToRemove.extend(["BrotherhoodProgressive"]*8)
+    #    itemNamesToRemove.extend(["DawnguardProgressive"]*7)
+    #    itemNamesToRemove.extend(["DragonbornProgressive"]*4)
+    #    itemNamesToRemove.extend(["FactionComplete"]*6)
+
     #Check if a Faction is enabled, and remove their Progressive Items and a Faction Complete if not.
     if not CompanionsEnable:
-        itemNamesToRemove.extend(["CompanionProgressive"]*6)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["CompanionProgressive"]*6)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif CompanionsEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["CompanionProgressive"]*3)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
     if not CollegeEnable:
-        itemNamesToRemove.extend(["CollegeProgressive"]*8)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["CollegeProgressive"]*8)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif CollegeEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["CollegeProgressive"]*4)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
     if not GuildEnable:
-        itemNamesToRemove.extend(["GuildProgressive"]*11)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["GuildProgressive"]*11)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif GuildEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["GuildProgressive"]*6)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
     if not BrotherhoodEnable:
-        itemNamesToRemove.extend(["BrotherhoodProgressive"]*13)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["BrotherhoodProgressive"]*13)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif BrotherhoodEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["BrotherhoodProgressive"]*8)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
     if not DawnguardEnable:
-        itemNamesToRemove.extend(["DawnguardProgressive"]*11)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["DawnguardProgressive"]*11)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif DawnguardEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["DawnguardProgressive"]*7)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
     if not DragonbornEnable:
-        itemNamesToRemove.extend(["DragonbornProgressive"]*7)
-        itemNamesToRemove.extend(["FactionComplete"]*1)
+            itemNamesToRemove.extend(["DragonbornProgressive"]*7)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
+    elif DragonbornEnable:
+        if GoalSetting == FinalGoal.option_DragonAck:
+            itemNamesToRemove.extend(["DragonbornProgressive"]*4)
+            itemNamesToRemove.extend(["FactionComplete"]*1)
 
 
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)
-        logging.info(f"Removing {itemName} from {player}'s world'") #( Set this to itemName?)
+        logging.info(f"Removing {itemName} from {player}'s world") #( Set this to itemName?)
         item_pool.remove(item)
 
     return item_pool
