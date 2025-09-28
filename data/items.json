@@ -167,6 +167,12 @@
 		"progression": true
 	},
 	{
+		"count":4,
+		"name": "ProgressiveSpellTier",
+		"category": ["SpellTier"],
+		"progression": true
+	},
+	{
 		"count":5,
 		"name": "ProgressiveLightArmorTier",
 		"category": ["ArmorTier"],
@@ -177,17 +183,5 @@
 		"name": "ProgressiveHeavyArmorTier",
 		"category": ["ArmorTier"],
 		"useful": true
-	},
-	{
-		"count":4,
-		"name": "ProgressiveSpellTier",
-		"category": ["SpellTier"],
-		"progression": true
-	},
-	{
-		"count":4,
-		"name": "DragonTail",
-		"category": ["Junk"],
-		"filler": true
 	}
 ]
