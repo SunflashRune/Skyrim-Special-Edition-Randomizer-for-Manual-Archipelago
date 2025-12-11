@@ -73,7 +73,7 @@ Requires 3 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 			"Mind of Madness Complete"
 			"Waking Nightmare Complete"
 
-Requires 4 "MainQuestProgressive":
+Requires 4 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 	"Way of the Voice Complete"
 		"Crustacean Extermination Complete"[Fishing]
 		"Forsworn Bounties Complete = 6"[Bounties]
@@ -82,7 +82,7 @@ Requires 4 "MainQuestProgressive":
 	Dawnguard Quests becomes Accessible(Requires Dawnguard Progressives)
 	Dragonborn Quests becomes Accessible(Requires Dragonborn Progressives)
 	
-Requires 5 "MainQuestProgressive":
+Requires 5 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 	"Horn of Jurgen Windcaller Note" (Get note and leave dungeon)
 		"Barovian Housekeeping"(Clear 2 Vampire Lairs)
 		"Frozen Fish Complete"[Fishing]
@@ -90,7 +90,7 @@ Requires 5 "MainQuestProgressive":
 		"Dragon Bounties Complete = 3"
 		"Land Owned = 1"[Housing]
 
-Requires 6 "MainQuestProgressive":
+Requires 6 "MainQuestProgressive" AND 1 "Progressive Weapon Tier":
 	"Blade in the Dark Complete"
 		"Skilled"(3 Skills to 30+)
 		"Dragons Slain = 6"
@@ -102,34 +102,34 @@ Requires 6 "MainQuestProgressive":
 			"Night to Remember Complete"
 
 Requires 7 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
-	"Jurgen Horn Complete"(Actually turn in the Horn to Arengir after getting it from Delphine)
+	"Jurgen Horn Complete"(Actually turn in the Horn to Arengir after getting it from Delphine) [End of Dragonborn Acknowledged Goal!!]
 		"Crafter"(Create 5 UNIQUE Smithed OR Enchanted OR Brewed Items) {Requires ONE OF Smithing, Enchanting, or Alchemy}
 		"Dragon Bounties Complete = 6"
 		"Town Home Owned = 3"[Housing]
 
-Requires 8 "MainQuestProgressive":
+Requires 8 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Diplomatic Immunity Complete"
 		"Hunting Expert"[Hunting](Hunt 2 Cave Bears and 3 Spriggans ||OR|| 2 Hagravens and 3 Drauger Wights)
 		"Word Walls Read = 6"[Exploration]
 		"Standing Stones Found = 13"[Exploration](This should be all of them!)
 		"Land Owned = 3"[Housing]
 	
-Requires 9 "MainQuestProgressive":
+Requires 9 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Cornered Rat Complete"
 		"Dragons Slain = 10"
 		"Tusked Terror Complete"[Fishing]
 		"Main Hall"[Housing](Build a Main Hall with no Wings on a plot of land){Requires Smithing}
 
-Requires 10 "MainQuestProgressive":
+Requires 10 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Aludins Wall Complete"
 		"Miner Sixty-Niner"[Exploration](Clear 6 Mines and Caves)
 
-Requires 11 "MainQuestProgressive":
+Requires 11 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Throat of the World Complete"
 		"Eminent Domain"[Exploration](Clear 6 Forts)
 		"Town Homes Owned = 5"[Housing]
 
-Requires 12 "MainQuestProgressive":
+Requires 12 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Elder Knowledge Complete"
 		"Hunting Legendary"[Hunting](Hunt 2 Dragon Priests and 3 Dwarven Centurions)
 		"Full Manor on 1 Land"[Housing](Complete all 3 wings on a plot of land){Requires Smithing}
@@ -139,14 +139,14 @@ Requires 12 "MainQuestProgressive":
 			"Pieces of the Past Complete"{Requires Speech}
 			"Whispering Door Complete"(Simply retrieving the Blade is all that's required)
 
-Requires 13 "MainQuestProgressive":
+Requires 13 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"Alduins bane Complete"
 		"Archaeologist"[Explorer](Clear 6 Nordic Ruins)
 	
-Requires 14 "MainQuestProgressive":
+Requires 14 "MainQuestProgressive" AND 2 "Progressive Weapon Tier":
 	"The Fallen Complete"
 	
-Requires 15 "MainQuestProgressive" AND 1 "Faction Complete"
+Requires 15 "MainQuestProgressive" AND 2 "Progressive Weapon Tier" (AND 1 "Faction Complete", if playing Alduin + Faction Goal):
 	"Alduin Slain"
 	
 The Factions follow roughly the same pattern as each other:
