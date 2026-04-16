@@ -1,5 +1,5 @@
 
-Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7.3
+Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7.4
 
 	There are plans to create similar versions down the line that are more narrow for those that may be interested, but this version is intentionally wide-ranging in possible 'things-to-do'.
 	Thank you for your interest!
