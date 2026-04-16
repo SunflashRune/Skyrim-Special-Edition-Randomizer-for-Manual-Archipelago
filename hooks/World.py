@@ -1,6 +1,7 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
+from typing import Any
 from worlds.AutoWorld import World
-from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
+from BaseClasses import MultiWorld, CollectionState, Item
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -12,7 +13,7 @@ from ..Locations import ManualLocation
 from ..Data import game_table, item_table, location_table, region_table
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
-from ..Helpers import is_option_enabled, get_option_value, format_state_prog_items_key, ProgItemsCat
+from ..Helpers import is_option_enabled, get_option_value, format_state_prog_items_key, ProgItemsCat, remove_specific_item
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
@@ -38,6 +39,13 @@ from .Options import FinalGoal
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
     return False
 
+def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
+    """
+    This is the earliest hook called during generation, before anything else is done.
+    Use it to check or modify incompatible options, or to set up variables for later use.
+    """
+    pass
+
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     pass
@@ -45,8 +53,8 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
-    locationNamesToRemove = [] # List of location names
-    locationNamesToExclude = []
+    locationNamesToRemove: list[str] = [] # List of location names
+    # locationNamesToExclude = []
 
     CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
     CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
@@ -126,15 +134,11 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             logging.info(f"Removing {location['name']} from {player}'s world")
             locationNamesToRemove.append(location["name"])
 
+
+
+
     # Add your code here to calculate which locations to remove
 
-    for region in multiworld.regions:
-        if region.player == player:
-            for location in list(region.locations):
-                if location.name in locationNamesToRemove:
-                    region.locations.remove(location)
-    if hasattr(multiworld, "clear_location_cache"):
-        multiworld.clear_location_cache()
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
@@ -271,11 +275,14 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
             itemNamesToRemove.extend(["DragonbornProgressive"]*4)
             itemNamesToRemove.extend(["FactionComplete"]*1)
 
+    # Add your code here to calculate which items to remove.
+    #
+    # Because multiple copies of an item can exist, you need to add an item name
+    # to the list multiple times if you want to remove multiple copies of it.
 
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)
-        logging.info(f"Removing {itemName} from {player}'s world") #( Set this to itemName?)
-        item_pool.remove(item)
+        remove_specific_item(item_pool, item)
 
     return item_pool
 
@@ -285,22 +292,11 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == "Location Name")
     # item_to_place = next(i for i in item_pool if i.name == "Item Name")
     # location.place_locked_item(item_to_place)
-    # item_pool.remove(item_to_place)
+    # remove_specific_item(item_pool, item_to_place)
 
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
-
-    GoalSetting = get_option_value(multiworld, player, "FinalGoal")
-
-    for item in item_pool:
-        if GoalSetting == FinalGoal.option_DragonAck and item.name == "ProgressiveLightArmorTier":
-            item.classification = ItemClassification.filler
-        if GoalSetting == FinalGoal.option_DragonAck and item.name == "ProgressiveHeavyArmorTier":
-            item.classification = ItemClassification.filler
-
-
     return item_pool
-
 
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
 def before_set_rules(world: World, multiworld: MultiWorld, player: int):
@@ -309,6 +305,7 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
+
     GoalSetting = get_option_value(multiworld, player, "FinalGoal")
     CompanionsEnable = get_option_value(multiworld, player, "CompanionsEnable")
     CollegeEnable = get_option_value(multiworld, player, "CollegeEnable")
@@ -359,8 +356,6 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 old_rule = location.access_rule
                 #location.access_rule = lambda state: state.count_group("FactionsDone", world.player) >= FactionCompletestoAdd #This works but it slow.
                 location.access_rule = lambda state: state.has_group("FactionsDone", world.player, FactionCompletestoAdd)
-
-
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean
@@ -445,3 +440,10 @@ def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: 
 
 def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
     pass
+
+def hook_interpret_slot_data(world: World, player: int, slot_data: dict[str, Any]) -> dict[str, Any]:
+    """
+        Called when Universal Tracker wants to perform a fake generation
+        Use this if you want to use or modify the slot_data for passed into re_gen_passthrough
+    """
+    return slot_data

@@ -1,7 +1,6 @@
 
-Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7.2
+Welcome to a Skyrim Special Edition Archipelago Manual Randomizer, version 0.7.3
 
-	Being an early alpha, this version is more geared towards general play-testing and feedback-creation of the types of Locations and Items.
 	There are plans to create similar versions down the line that are more narrow for those that may be interested, but this version is intentionally wide-ranging in possible 'things-to-do'.
 	Thank you for your interest!
 
@@ -10,6 +9,7 @@ What does randomization do to this game?
 	First and foremost; know that as a Manual Randomizer, you are not restricted from playing the game as normal. There is no mod or extra code that modifies Skyrim, so you will need to use the honor system while you play.
 	
 	Currently the majority of objectives that can be shuffled among the multiworld are the 'permission' to start certain quests, and what Skills/Item-tiers you are allowed to use.
+	There are now also custom objectives that are added to the pool of Locations. See docs\en_SkyrimSpecialEdition_Location Logic Explanation.txt for more details!
 
 		
 What is the goal of Skyrim Special Edition Manual AP?

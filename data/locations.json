@@ -11,126 +11,145 @@
 		"category": ["MainQuest"],
 		"requires": [],
 		"main_enable": ["Yes"],
-		"place_item_category": ["Skill"]
+		"place_item_category": ["Skill"],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Before the Storm Complete (1)",
 		"region": "BeforetheStorm",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Bleak Falls Barrow Complete (2)",
 		"region": "BleakFallsBarrow",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Dragon Rising Complete (3)",
 		"region": "DragonRising",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Way of the Voice Complete (4)",
 		"region": "WayoftheVoice",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Horn of Jurgen Windcaller Note (5)",
 		"region": "HornofJurgenWindcaller",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Blade in the Dark Complete (6)",
 		"region": "BladeintheDark",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Jurgen Horn Returned (7)",
 		"region": "JurgenHornReturned",
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-8"
 	},
 	{
 		"name": "Diplomatic Immunity Complete (8)",
 		"region": "DiplomaticImmunity",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-9"
 	},
 	{
 		"name": "Cornered Rat Complete (9)",
 		"region": "CorneredRat",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-10"
 	},
 	{
 		"name": "Alduins Wall Complete (10)",
 		"region": "AlduinsWall",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-11"
 	},
 	{
 		"name": "Throat of the World Complete (11)",
 		"region": "ThroatoftheWorld",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-12"
 	},
 	{
 		"name": "Elder Knowledge Complete (12)",
 		"region": "ElderKnowledge",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-13"
 	},
 	{
 		"name": "Aludins Bane Complete (13)",
 		"region": "AlduinsBane",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-14"
 	},
 	{
 		"name": "The Fallen Complete (14)",
 		"region": "TheFallen",
 		"category": ["MainQuest"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-15"
 	},
 	{
 		"name": "Alduin Slain (15)",
 		"region": "WorldEatersEyrie",
 		"ack_enable":["Yes"],
 		"category": ["MainQuest"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-16"
 	},
 	{
 		"name": "Take Up Arms Complete (1)",
 		"region": "TakeUpArms",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Proving Honor Complete (2)",
 		"region": "ProvingHonor",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "The Silver Hand Complete (3)",
 		"region": "TheSilverHand",
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Bloods Honor Complete (4)",
@@ -138,7 +157,8 @@
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Purity of Revenge Complete (5)",
@@ -146,7 +166,8 @@
 		"category": ["CompanionsPrimary"],
 		"comp_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Glory of the Dead Complete (6)",
@@ -155,35 +176,40 @@
 		"comp_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "First Lessons Complete (1)",
 		"region": "FirstLessons",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Under Saarthal Complete (2)",
 		"region": "UnderSaarthal",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Hitting the Books Complete (3)",
 		"region": "HittingtheBooks",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Good Intentions Complete (4)",
 		"region": "GoodIntentions",
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Revealing the Unseen Complete (5)",
@@ -191,7 +217,8 @@
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": "|Destruction|"
+		"requires": "|Destruction|",
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Containment Complete (6)",
@@ -199,7 +226,8 @@
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Staff of Magnus Complete (7)",
@@ -207,7 +235,8 @@
 		"category": ["CollegePrimary"],
 		"coll_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Eye of Magnus Complete (8)",
@@ -216,42 +245,48 @@
 		"coll_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-8"
 	},
 	{
 		"name": "Chance Arrangement Complete (1)",
 		"region": "ChanceArrangement",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Taking Care of Business Complete (2)",
 		"region": "TakingCareofBusiness",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Loud and Clear Complete (3)",
 		"region": "LoudandClear",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Dampened Spirits Complete (4)",
 		"region": "DampenedSpirits",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Scoundrels Folly Complete (5)",
 		"region": "ScoundrelsFolly",
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Speaking with Silence Complete [6]",
@@ -259,7 +294,8 @@
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Hard Answers Complete (7)",
@@ -267,7 +303,8 @@
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Pursuit Complete (8)",
@@ -275,7 +312,8 @@
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-8"
 	},
 	{
 		"name": "Trinity Restored Complete (9)",
@@ -283,7 +321,8 @@
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-9"
 	},
 	{
 		"name": "Blindsighted Complete (10)",
@@ -291,7 +330,8 @@
 		"category": ["ThievesPrimary"],
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-10"
 	},
 	{
 		"name": "Darkness Returns Complete (11)",
@@ -300,42 +340,48 @@
 		"guild_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-11"
 	},
 	{
 		"name": "Innocence Lost Complete (1)",
 		"region": "Innocence Lost",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "With Friends Like These Complete (2)",
 		"region": "With Friends Like These...",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Sanctuary Complete (3)",
 		"region": "Sanctuary",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Mourning Never Comes Complete (4)",
 		"region": "Mourning Never Comes",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Whispers in the Dark Complete (5)",
 		"region": "Whispers in the Dark",
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Silence Broken Complete (6)",
@@ -343,7 +389,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Bound Until Death Complete (7)",
@@ -351,7 +398,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Breaching Security Complete (8)",
@@ -359,7 +407,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-8"
 	},
 	{
 		"name": "Cure for Madness Complete (9)",
@@ -367,7 +416,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-9"
 	},
 	{
 		"name": "Recipe for Disaster Complete (10)",
@@ -375,7 +425,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-10"
 	},
 	{
 		"name": "To Kill an Empire Complete (11)",
@@ -383,7 +434,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-11"
 	},
 	{
 		"name": "Death Incarnate Complete (12)",
@@ -391,7 +443,8 @@
 		"category": ["BrotherhoodPrimary"],
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-12"
 	},
 	{
 		"name": "Hail Sithis Complete (13)",
@@ -400,35 +453,40 @@
 		"brother_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-13"
 	},
 	{
 		"name": "Dawnguard Complete (1)",
 		"region": "Dawnguard",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Awakening Complete (2)",
 		"region": "Awakening",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Bloodline Complete (3)",
 		"region": "Bloodline",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "New Order/Bloodstone Chalice Complete (4)",
 		"region": "A New Order/The Bloodstone Chalice",
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Prophet Complete (5)",
@@ -436,7 +494,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Scroll Scouting Complete (6)",
@@ -444,7 +503,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Chasing Echoes Complete (7)",
@@ -452,7 +512,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Seeking Disclosure Complete (8)",
@@ -460,7 +521,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-8"
 	},
 	{
 		"name": "Unseen Visions Complete (9)",
@@ -468,7 +530,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-9"
 	},
 	{
 		"name": "Touching the Sky Complete (10)",
@@ -476,7 +539,8 @@
 		"category": ["DawnguardPrimary"],
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-10"
 	},
 	{
 		"name": "Kindred Judgment Complete (11)",
@@ -485,28 +549,32 @@
 		"dawn_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-11"
 	},
 	{
 		"name": "Dragonborn Complete (1)",
 		"region": "Dragonborn",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-1"
 	},
 	{
 		"name": "Temple of Miraak Complete (2)",
 		"region": "The Temple of Miraak",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-2"
 	},
 	{
 		"name": "Fate of the Skaal Complete (3)",
 		"region": "The Fate of the Skaal",
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-3"
 	},
 	{
 		"name": "Cleansing the Stones Complete (4)",
@@ -514,7 +582,8 @@
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-4"
 	},
 	{
 		"name": "Path of Knowledge Complete (5)",
@@ -522,7 +591,8 @@
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-5"
 	},
 	{
 		"name": "Gardener of Men Complete (6)",
@@ -530,7 +600,8 @@
 		"category": ["DragonbornPrimary"],
 		"dragon_enable": ["Yes"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-6"
 	},
 	{
 		"name": "Summit of Apocrypha Complete (7)",
@@ -539,101 +610,117 @@
 		"dragon_enable": ["Yes"],
 		"ack_enable":["Yes"],
 		"requires": [],
-		"place_item": ["FactionComplete"]
+		"place_item": ["FactionComplete"],
+		"sort-key": "row-0-7"
 	},
 	{
 		"name": "Black Star Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": "|Speech|"
+		"requires": "|Speech|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "House of Horrors Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": "|Speech| AND |One-Handed|"
+		"requires": "|Speech| AND |One-Handed|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Ill Met By Moonlight Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Mind of Madness Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Taste of Death Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": "|Speech|"
+		"requires": "|Speech|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Waking Nightmare Complete",
 		"region": "Daedra",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Break of Dawn Complete",
 		"region": "DaedraTier2",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Cursed Tribe Complete",
 		"region": "DaedraTier2",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Daedras Best Friend Complete",
 		"region": "DaedraTier2",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Night to Remember Complete",
 		"region": "DaedraTier2",
 		"category": ["Daedric"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Only Cure Complete",
 		"region": "DaedraTier2",
 		"category": ["Daedric"],
-		"requires": "|One-Handed| OR |Two-Handed| OR |Archery|"
+		"requires": "|One-Handed| OR |Two-Handed| OR |Archery|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Boethiahs Calling Complete",
 		"region": "DaedraTier3",
 		"category": ["Daedric"],
 		"ack_enable":["Yes"],
-		"requires": "|One-Handed|"
+		"requires": "|One-Handed|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Discerning the Transmundane Complete",
 		"region": "ElderKnowledge",
 		"category": ["Daedric"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Pieces of the Past Complete",
 		"region": "DaedraTier3",
 		"category": ["Daedric"],
 		"ack_enable":["Yes"],
-		"requires": "|Speech|"
+		"requires": "|Speech|",
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Whispering Door Complete",
 		"region": "DaedraTier3",
 		"category": ["Daedric"],
 		"ack_enable":["Yes"],
-		"requires": []
+		"requires": [],
+		"sort-key": "row-0-"
 	},
 	{
 		"name": "Den Clearer (2 Animal Dens)",
